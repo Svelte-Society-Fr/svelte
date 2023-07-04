@@ -10,7 +10,7 @@ Cette documentation en français, ainsi que l'intégralité du contenu en franç
 
 ## Démarrer un nouveau projet
 
-Nous recommandons d'utiliser [SvelteKit](https://kit.svelte.dev/), le framework d'application officiel créé par l'équipe Svelte:
+Nous recommandons d'utiliser [SvelteKit](https://kit.svelte.dev/), le framework d'application officiel créé par l'équipe Svelte :
 
 ```
 npm create svelte@latest myapp
