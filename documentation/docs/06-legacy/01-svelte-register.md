@@ -2,9 +2,9 @@
 title: 'svelte/register'
 ---
 
-> This API is removed in Svelte 4. `require` hooks are deprecated and current Node versions understand ESM. Use a bundler like Vite or our full-stack framework [SvelteKit](https://kit.svelte.dev) instead to create JavaScript modules from Svelte components.
+> Cette méthode a été retirée à partir de Svelte 4. La méthode `require` a été dépréciée car les versions actuelles de Node comprennent directement le format ESM. Utilisez un <span class="vo">bundler</span> comme Vite ou le <span class="vo">framework full-stack</span> [SvelteKit](https://kit.svelte.dev) à la place pour créer des modulets Javascript à partir de composants Svelte.
 
-To render Svelte components in Node.js without bundling, use `require('svelte/register')`. After that, you can use `require` to include any `.svelte` file.
+Pour rendre des composants Svelte avec Node.js sans étape de compilation, utilisez `require('svelte/register')`.Vous pourrez alors utiliser la syntaxe `require` pour importe tout fichier ayant l'extension `.svelte`.
 
 ```js
 // @noErrors
@@ -17,9 +17,9 @@ const App = require('./App.svelte').default;
 const { html, css, head } = App.render({ answer: 42 });
 ```
 
-> The `.default` is necessary because we're converting from native JavaScript modules to the CommonJS modules recognised by Node. Note that if your component imports JavaScript modules, they will fail to load in Node and you will need to use a bundler instead.
+> L'instruction `.default` est nécessaire car Svelte convertit à partir de modules Javascript natifs en modules CommonJS reconnus par Node. Notez que si vos composants importent des modules Javascript, ils n'arriveront pas à les charger dans un environnement Node et vous devrez utilisez un <span class="vo">bundler</span> à la place.
 
-To set compile options, or to use a custom file extension, call the `register` hook as a function:
+Pour passer des options de comiplation, ou pour utiliser des extensions de fichier personnalisés, appelez la méthode `register` comme une fonction :
 
 ```js
 // @noErrors
