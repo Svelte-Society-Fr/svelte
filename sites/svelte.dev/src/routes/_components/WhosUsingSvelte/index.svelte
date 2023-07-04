@@ -10,7 +10,7 @@
 	<h3>adoré par les développeurs et développeuses</h3>
 
 	<p>
-		Nous sommes fiers que Svelte a récemment été élu <a
+		Nous sommes fiers que Svelte ait récemment été élu <a
 			href="https://survey.stackoverflow.co/2023/#section-admired-and-desired-web-frameworks-and-technologies"
 			>framework JS web le plus admiré</a
 		>
