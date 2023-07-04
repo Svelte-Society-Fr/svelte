@@ -33,4 +33,4 @@ L'équipe Svelte maintient une extension [VS Code](https://marketplace.visualstu
 
 ## Obtenir de l'aide
 
-Si vous rencontrez des difficultés, vous trouverez de l'aide sur le [Discord officiel](https://svelte.dev/chat) ou sur le [Discord francophone](). Vous trouverez également des réponses sur [StackOverflow](https://stackoverflow.com/questions/tagged/svelte).
+Si vous rencontrez des difficultés, vous trouverez de l'aide sur le [Discord officiel](https://svelte.dev/chat) ou sur le [Discord francophone](/chat). Vous trouverez également des réponses sur [StackOverflow](https://stackoverflow.com/questions/tagged/svelte).
