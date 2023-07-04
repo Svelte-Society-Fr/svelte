@@ -7,7 +7,7 @@
 	<Section --background="var(--background-2)">
 		<div class="grid" style="--columns: 2">
 			<div class="copy">
-				<h2>par vous-même</h2>
+				<h2>faites-vous votre opinion</h2>
 				<div>
 					Essayez en local, <a target="_blank" rel="noreferrer" href="https://sveltekit.new"
 						>sur StackBlitz</a
