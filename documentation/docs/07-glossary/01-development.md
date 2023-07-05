@@ -4,7 +4,9 @@ title: 'Développement'
 
 Voici quelques informations sur les angliscismes usuels utilisés dans un contexte de développement informatique.
 
-> Ces mots n'ont pas de réel équivalent en français, et nous préférons laisser leur version anglaise dans la documentation pour rester au plus près de l'usage courant.
+Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est que très rarement utilisée. Nous préférons donc laisser leur version anglaise dans la documentation pour rester au plus près de l'usage courant.
+
+> Cette section de glossaire est spécifique à la documentation française de Svelte, et n'existe pas dans la documentation officielle.
 
 ## Callback
 
@@ -33,7 +35,7 @@ Un _getter_ est une fonction qui permet de lire une valeur.
 Un _setter_ est une fonction qui permet d'écrire une valeur.
 
 Ils vont souvent de pair, mais peuvent exister indépendamment de l'autre.
-Ils sont en général utilisés pour éviter d'exposer les propriétés internes d'un objet et permet à l'objet de faire des manipulations supplémentaires sur les valeurs.
+Ils sont en général utilisés pour éviter d'exposer les propriétés internes d'un objet et permet à l'objet de faire des vérifications ou des  supplémentaires sur les valeurs.
 
 Un _setter_ pourrait être utilisé pour la propriété `nom` pour forcer la mise en majuscule
 ```ts
@@ -41,16 +43,18 @@ class Personne {
   private nom = 'Marie';
 
 	// setter
-  setNom(nom: string): void {
+  set nom(nom: string): void {
     this.nom = nom.toUpperCase()
   }
 
 	// getter
-  getNom(): string {
+  get nom(): string {
     return this.nom
   }
 }
 ```
+
+Vous trouverez plus de détails sur les [getters](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/get) et [setters](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/set) en JavaScript dans la documentation de MDN.
 
 ## Wrapper
 
@@ -75,3 +79,5 @@ function bonjourWrapper(original: (name: string) => string): (name: string) => s
 const nouveauBonjour = bonjourWrapper(bonjour)
 nouveauBonjour("Jean") // "Bonjour Jean! Comment vas-tu?"
 ```
+
+> Par extension, un _wrapper_ désigne également un composant qui "enveloppe" une autre composant afin de lui apporter des fonctionnalités supplémentaires (style, comportement, etc.).
