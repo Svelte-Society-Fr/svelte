@@ -6,9 +6,10 @@ Bienvenue sur la documentation Svelte de référence ! Ces pages sont pensées c
 
 Si ce n'est pas (encore) le cas pour vous, vous préférerez probablement jeter un oeil au [tutoriel interactif](/tutorial) ou aux [exemples](/examples) avant de consulter cette section. Vous pouvez essayez Svelte en ligne en utilisant le [REPL](/repl), ou bien sur [StackBlitz](https://sveltekit.new) si vous préférez un environnement de développement plus complet.
 
-Cette documentation en français, ainsi que l'intégralité du contenu en français de ce site est une **traduction bénévole et non officielle** de la [documentation et du site officiels](https://svelte.dev) (en anglais), qui restent la référence. N'hésitez pas à y jeter un oeil. Vous pouvez aussi [nous faire part de vos suggestions de traduction](https://github.com/Svelte-Society-Fr/svelte/issues) si celles que vous trouverez dans ces pages ne vous conviennent pas.
-
-Coucou le <span class="vo">[store](/docs/sveltejs#store)</span>
+> Cette documentation en français, ainsi que l'intégralité du contenu en français de ce site, sont une **traduction bénévole et non officielle** de la [documentation](https://svelte.dev/docs) et du [site](https://svelte.dev) officiels (en anglais), qui restent la référence. N'hésitez pas à y jeter un oeil. Vous pouvez aussi [nous faire part de vos suggestions de traduction](https://github.com/Svelte-Society-Fr/svelte/issues) si celles que vous trouverez dans ces pages ne vous conviennent pas.
+>
+> Vous trouverez parfois des termes non traduits, comme <span class="vo">[falsy](/docs/javascript#falsy-truthy-falsy)</span> ou encore
+> <span class="vo">[bundler](/docs/web#bundler-packager)</span>. Ces termes sont en général utilisés tels quels en français, et nous avons choisi de les laisser ainsi dans la documentation française. N'hésitez pas à suivre les liens proposés, qui vous dirigeront vers un glossaire fournissant quelques explications.
 
 ## Démarrer un nouveau projet
 
