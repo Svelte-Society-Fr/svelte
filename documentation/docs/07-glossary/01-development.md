@@ -10,6 +10,8 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 
 ## API
 
+> Bientôt...
+
 ## Callback
 
 Un _callback_ (ou fonction de rappel) est une fonction qui sera appelée lorsqu'un certain travail est terminé.
