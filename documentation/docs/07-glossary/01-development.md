@@ -141,3 +141,7 @@ nouveauBonjour("Jean") // "Bonjour Jean! Comment vas-tu?"
 ```
 
 > Par extension, un _wrapper_ désigne également un composant qui "enveloppe" une autre composant afin de lui apporter des fonctionnalités supplémentaires (style, comportement, etc.).
+
+## Writable
+
+> Bientôt...
