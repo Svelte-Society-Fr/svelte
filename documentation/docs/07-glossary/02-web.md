@@ -40,7 +40,15 @@ Les transformations classiques effectuées lors d'un _bundling_ sont :
 
 > Bientôt...
 
+## Routing
+
+> Bientôt...
+
 ## Sourcemaps
+
+> Bientôt...
+
+## Server-side rendering
 
 > Bientôt...
 

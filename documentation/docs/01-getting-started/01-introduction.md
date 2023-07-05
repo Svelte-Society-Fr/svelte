@@ -13,7 +13,7 @@ Si ce n'est pas (encore) le cas pour vous, vous préférerez probablement jeter 
 
 ## Démarrer un nouveau projet
 
-Nous recommandons d'utiliser [SvelteKit](https://kit.svelte.dev/), le framework d'application officiel créé par l'équipe Svelte :
+Nous recommandons d'utiliser [SvelteKit](https://kit.svelte.dev/), le <span class="vo">[framework](/docs/web#framework)</span> d'application officiel créé par l'équipe Svelte :
 
 ```
 npm create svelte@latest myapp
@@ -22,13 +22,13 @@ npm install
 npm run dev
 ```
 
-SvelteKit se charge d'exécuter [le compilateur Svelte](https://www.npmjs.com/package/svelte) pour convertir vos fichiers `.svelte` en fichiers `.js` qui créent le DOM, et en fichiers `.css` qui le stylisent. Il fournit également tout ce dont vous avez besoin pour créer une application web, comme un serveur de développement, du routage, et des outils de déploiement. [SvelteKit](https://kit.svelte.dev/) utilise [Vite](https://vitejs.dev/) pour empaqueter votre code.
+SvelteKit se charge d'exécuter [le compilateur Svelte](https://www.npmjs.com/package/svelte) pour convertir vos fichiers `.svelte` en fichiers `.js` qui créent le DOM, et en fichiers `.css` qui le stylisent. Il fournit également tout ce dont vous avez besoin pour créer une application web, comme un serveur de développement, du <span class="vo">[routing](/docs/web#routing)</span>, et des outils de déploiement. [SvelteKit](https://kit.svelte.dev/) utilise [Vite](https://vitejs.dev/) pour empaqueter votre code.
 
 ### Alternatives à SvelteKit
 
 Si vous ne souhaitez pas utiliser SvelteKit, vous pouvez aussi utiliser Svelte (sans SvelteKit) avec Vite en exécutant `npm init vite`, puis en choisissant l'option `svelte`. De cette manière, `npm run build` génèrera les fichiers HTML, JS et CSS dans le dossier `dist`. Dans la plupart des cas, vous aurez aussi probablement besoin de [choisir une librairie de routing](/faq#is-there-a-router).
 
-Il existe également des [plugins pour les bundlers web majeurs](https://sveltesociety.dev/tools#bundling) pour gérer la compilation Svelte — qui génèreront les `.js` et `.css` à insérer dans votre HTML — mais la plupart ne gèreront pas pas le rendu côté serveur (SSR).
+Il existe également des [plugins pour les bundlers web majeurs](https://sveltesociety.dev/tools#bundling) pour gérer la compilation Svelte — qui génèreront les `.js` et `.css` à insérer dans votre HTML — mais la plupart ne gèreront pas pas le <span class="vo">[rendu côté serveur (SSR)](/docs/web#server-side-rendering)</span>.
 
 ## Outillage d'éditeur
 
