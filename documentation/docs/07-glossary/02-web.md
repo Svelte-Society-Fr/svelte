@@ -23,3 +23,6 @@ Les transformations classiques effectuées lors d'un _bundling_ sont :
 - Réorganisation des dossiers et fichiers
 
 > Vite et Rollup sont des exemples de _bundler_.
+
+
+## Web components

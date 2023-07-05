@@ -39,6 +39,8 @@ element.addEventListener('click', () => console.log('Click !'))
 
 Plus d'infos sur les _event listeners_ sur [le site de MDN](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener).
 
+## Event dispatcher
+
 ## Truthy / Falsy
 
 ### Falsy

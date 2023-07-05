@@ -22,7 +22,7 @@ function afficheCoucou() {
 
 function chargeLaDonnée(callback: () => void) {
 	// je charge la donnée, peu importe comment, puis...
- 	callback();
+	callback();
 }
 
 // ici, afficheCoucou est utilisée en tant que callback
@@ -40,17 +40,17 @@ Ils sont en général utilisés pour éviter d'exposer les propriétés internes
 Un _setter_ pourrait être utilisé pour la propriété `nom` pour forcer la mise en majuscule
 ```ts
 class Personne {
-  private nom = 'Marie';
+	#nom = 'Marie';
 
 	// setter
-  set nom(nom: string): void {
-    this.nom = nom.toUpperCase()
-  }
+	set nom(n: string) {
+		this.#nom = n.toUpperCase()
+	}
 
 	// getter
-  get nom(): string {
-    return this.nom
-  }
+	get nom() {
+		return this.nom
+	}
 }
 ```
 
@@ -66,15 +66,15 @@ Un _wrapper_ pourrait être utilisé pour aggrémenter un message d'accueil :
 ```ts
 // Fonction d'origine
 const bonjour = function (name: string): string {
-  return `Bonjour ${name}!`
+	return `Bonjour ${name}!`
 }
 bonjour("Jean") // "Bonjour Jean!"
 
 // Wrapper de la fonction
 function bonjourWrapper(original: (name: string) => string): (name: string) => string {
-  return function (name: string) {
-    return original(name) + " Comment vas-tu ?"
-  }
+	return function (name: string) {
+		return original(name) + " Comment vas-tu ?"
+	}
 }
 const nouveauBonjour = bonjourWrapper(bonjour)
 nouveauBonjour("Jean") // "Bonjour Jean! Comment vas-tu?"
