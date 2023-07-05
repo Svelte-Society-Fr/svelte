@@ -2,7 +2,7 @@
 title: 'Développement'
 ---
 
-Voici quelques informations sur les angliscismes usuels utilisés dans un contexte de développement générique.
+Voici quelques informations sur les angliscismes usuels utilisés dans un contexte de développement informatique.
 
 > Ces mots n'ont pas de réel équivalent en français, et nous préférons laisser leur version anglaise dans la documentation pour rester au plus près de l'usage courant.
 
