@@ -8,6 +8,8 @@ Si ce n'est pas (encore) le cas pour vous, vous préférerez probablement jeter 
 
 Cette documentation en français, ainsi que l'intégralité du contenu en français de ce site est une **traduction bénévole et non officielle** de la [documentation et du site officiels](https://svelte.dev) (en anglais). N'hésitez pas à y jeter un oeil. Vous pouvez aussi [nous faire part de vos suggestions de traduction](https://github.com/Svelte-Society-Fr/svelte/issues) si celles que vous trouverez dans ces pages ne vous conviennent pas.
 
+Coucou le <span class="vo">[store](/docs/sveltejs#store)</span>
+
 ## Démarrer un nouveau projet
 
 Nous recommandons d'utiliser [SvelteKit](https://kit.svelte.dev/), le framework d'application officiel créé par l'équipe Svelte :
