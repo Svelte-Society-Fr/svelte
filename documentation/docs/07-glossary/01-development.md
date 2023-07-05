@@ -8,6 +8,8 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 
 > Cette section de glossaire est spécifique à la documentation française de Svelte, et n'existe pas dans la documentation officielle.
 
+## API
+
 ## Callback
 
 Un _callback_ (ou fonction de rappel) est une fonction qui sera appelée lorsqu'un certain travail est terminé.
@@ -55,6 +57,54 @@ class Personne {
 ```
 
 Vous trouverez plus de détails sur les [getters](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/get) et [setters](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/set) en JavaScript dans la documentation de MDN.
+
+## IDE
+
+> Bientôt...
+
+## Issue
+
+> Bientôt...
+
+## Namespace
+
+> Bientôt...
+
+## Parser
+
+> Bientôt...
+
+## Payload
+
+> Bientôt...
+
+## Plugin
+
+> Bientôt...
+
+## Pull Request
+
+> Bientôt...
+
+## Race conditions
+
+> Bientôt...
+
+## Runtime
+
+> Bientôt...
+
+## Scope
+
+> Bientôt...
+
+## Template
+
+> Bientôt...
+
+## Tooltip
+
+> Bientôt...
 
 ## Wrapper
 

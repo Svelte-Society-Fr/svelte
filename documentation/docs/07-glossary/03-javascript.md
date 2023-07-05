@@ -8,6 +8,16 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 
 > Cette section de glossaire est spécifique à la documentation française de Svelte, et n'existe pas dans la documentation officielle.
 
+## Bubble / Capture
+
+### Bubble
+
+> Bientôt...
+
+### Capture
+
+> Bientôt...
+
 ## Event listener
 
 Un _event listener_ est une fonction conçue pour être exécutée lorsqu'un événement est déclenché.
@@ -41,7 +51,9 @@ Plus d'infos sur les _event listeners_ sur [le site de MDN](https://developer.mo
 
 ## Event dispatcher
 
-## Truthy / Falsy
+> Bientôt...
+
+## Falsy / Truthy
 
 ### Falsy
 
@@ -83,3 +95,16 @@ Si une valeur est _truthy_, alors sa double négation renvoie la valeur `true`.
 ```
 
 Plus d'infos sur les valeurs _truthy_ sur [le site de MDN](https://developer.mozilla.org/fr/docs/Glossary/Truthy).
+
+## Inline
+
+> Bientôt...
+
+## Nullish
+
+Une valeur _nullish_ est une valeur qui est `null` ou `undefined`.
+
+`null` et `undefined` sont deux valeurs qui représentent toutes les deux l'absence de valeur. Ce sont des valeurs différentes (`null !== undefined`), mais équivalentes (`null == undefined`). Pour pouvoir faire référence aux deux, on utilise le terme _nullish_.
+
+Pour en savoir plus sur la différence entre `null` et `undefined`, vous pouvez par exemple lire [ceci](https://stackoverflow.com/questions/5076944/what-is-the-difference-between-null-and-undefined-in-javascript) (en anglais).
+

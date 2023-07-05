@@ -8,8 +8,29 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 
 > Cette section de glossaire est spécifique à la documentation française de Svelte, et n'existe pas dans la documentation officielle.
 
+## Binding
+
+> Bientôt...
+
+## Hooks
+
+> Bientôt...
+
+## Props
+
+> Bientôt...
+
+## Slot
+
+> Bientôt...
+
 ## Store
+
+> Bientôt...
 
 Un _store_ est un concept au sein de Svelte qui permet de stocker une valeur, et de notifier n'importe quel module au sein de l'application de ses changements de valeur.
 
 Plus d'infos sur [les stores Svelte dans la documentation](/docs/svelte-store).
+
+
+
