@@ -83,7 +83,7 @@ Plus d'infos sur les valeurs _falsy_ sur [le site de MDN](https://developer.mozi
 
 ### Truthy
 
-Une valeur est dite _truthy_ si celle-ci n'est pas <span class="vo">[falsy](/docs/javascript#truthy-falsy-falsy)</span>. Toutes les valeurs qui ne sont pas celles listées juste au-dessus sont donc _truthy_.
+Une valeur est dite _truthy_ si celle-ci n'est pas <span class="vo">[falsy](/docs/javascript#falsy-truthy-falsy)</span>. Toutes les valeurs qui ne sont pas celles listées juste au-dessus sont donc _truthy_.
 
 Si une valeur est _truthy_, alors sa double négation renvoie la valeur `true`.
 
