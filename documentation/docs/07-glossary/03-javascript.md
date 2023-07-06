@@ -96,6 +96,10 @@ Si une valeur est _truthy_, alors sa double négation renvoie la valeur `true`.
 
 Plus d'infos sur les valeurs _truthy_ sur [le site de MDN](https://developer.mozilla.org/fr/docs/Glossary/Truthy).
 
+## Generic
+
+> Bientôt...
+
 ## Inline
 
 > Bientôt...

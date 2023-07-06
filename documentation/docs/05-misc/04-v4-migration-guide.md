@@ -50,7 +50,7 @@ dispatch('required'); // erreur, argument manquant (error, missing argument)
 dispatch('noArgument', 'surprise'); // erreur, il n'est pas possible de passer un argument (error, cannot pass an argument)
 ```
 
-- `Action` et `ActionReturn` ont maintenant un type d'argument par défault à `undefined`, ce qui signifie que vous devez typez le <span class="vo">[generic](TODO)</span> si vous voulez spécifier que cette action reçoit un paramètre. Le script de migration prendra cette règle en compte automatiquement ([#7442](https://github.com/sveltejs/svelte/pull/7442))
+- `Action` et `ActionReturn` ont maintenant un type d'argument par défault à `undefined`, ce qui signifie que vous devez typez le <span class="vo">[generic](/docs/javascript#generic)</span> si vous voulez spécifier que cette action reçoit un paramètre. Le script de migration prendra cette règle en compte automatiquement ([#7442](https://github.com/sveltejs/svelte/pull/7442))
 
 ```diff
 -const action: Action = (node, params) => { .. } // ceci lèvera maintenant une erreur si vous utilisez un paramètre
@@ -74,7 +74,7 @@ onMount(
 );
 ```
 
-## Les <span class="vo">[Custom Elements](/docs/development#custom-elements)</span> avec Svelte
+## Les Custom Elements avec Svelte
 
 La création des <span class="vo">[Custom Elements](/docs/development#custom-elements)</span> avec Svelte a complètement été refondu et significativement amélioré. L'option `tag` a été déprécié en faveur de la nouvelle option `customElement` :
 
