@@ -159,6 +159,10 @@ Cela rend les liaisons de slots plus cohérentes car le comportement est indéfi
 
 L'ordre dans lequel les préprocesseurs sont appliqués a changé. Désormais, les préprocesseurs sont exécutés dans l'ordre et, au sein d'un même groupe, l'ordre est le suivant : balisage, script, style. Chaque préprocesseur doit également avoir un nom. ([#8618](https://github.com/sveltejs/svelte/issues/8618))
 
+## nouvelle librairie eslint
+
+`eslint-plugin-svelte3` est déprécié. Il est possible qu'il fonctionne encore avec Svelte 4, mais nous ne le garantissons pas. Nous recommandons de passer à notre nouvelle librairie [eslint-plugin-svelte] (https://github.com/sveltejs/eslint-plugin-svelte). Voir [ce ticket Github](https://github.com/sveltejs/kit/issues/10242#issuecomment-1610798405) pour des instructions sur la façon de migrer. Alternativement, vous pouvez créer un nouveau projet en utilisant `npm create svelte@latest`, sélectionner l'option eslint (et éventuellement TypeScript) et ensuite copier les fichiers associés dans votre projet existant.
+
 ## Autres changements majeurs
 
 - l'attribut `inert` est maintenant appliqué aux éléments sortants pour les rendre invisibles aux technologies d'assistance et empêcher l'interaction. ([#8628](https://github.com/sveltejs/svelte/pull/8628))
