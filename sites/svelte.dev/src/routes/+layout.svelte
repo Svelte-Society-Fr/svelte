@@ -35,7 +35,7 @@
 			</svelte:fragment>
 
 			<svelte:fragment slot="external-links">
-				<a href="https://learn.svelte.dev/">Tutorial</a>
+				<a href="https://learn.svelte.dev/">Tutoriel</a>
 
 				<a href="https://kit.svelte.dev">SvelteKit</a>
 
@@ -69,5 +69,16 @@
 	:global(html, body) {
 		height: 100%;
 		width: 100%;
+	}
+
+	:global(.text .vo a) {
+		color: unset;
+		box-shadow: inset 0 -1px 0 0 var(--sk-text-4);
+		transition: box-shadow 0.1s ease-in-out, font-weight 0.1s ease-in-out;
+	}
+
+	:global(.text .vo a:hover) {
+		color: white;
+		box-shadow: inset 0 -1px 0 0 white;
 	}
 </style>

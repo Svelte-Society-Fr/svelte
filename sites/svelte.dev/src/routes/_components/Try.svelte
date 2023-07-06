@@ -7,12 +7,12 @@
 	<Section --background="var(--background-2)">
 		<div class="grid" style="--columns: 2">
 			<div class="copy">
-				<h2>see for yourself</h2>
+				<h2>faites-vous une opinion</h2>
 				<div>
-					Try it locally, <a target="_blank" rel="noreferrer" href="https://sveltekit.new"
-						>on StackBlitz</a
-					>, or with
-					<a target="_blank" href="https://learn.svelte.dev">the interactive tutorial</a>.
+					Essayez en local, <a target="_blank" rel="noreferrer" href="https://sveltekit.new"
+						>sur StackBlitz</a
+					>, ou avec
+					<a target="_blank" href="https://learn.svelte.dev">le tutoriel interactif</a>.
 				</div>
 			</div>
 
@@ -65,7 +65,7 @@
 
 	h2 {
 		display: inline-block;
-		width: 25rem;
+		width: 40rem;
 		margin: 0 0 1rem;
 		font-size: var(--sk-text-xl);
 	}
