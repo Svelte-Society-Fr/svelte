@@ -40,6 +40,10 @@ Les transformations classiques effectuées lors d'un _bundling_ sont :
 
 > Bientôt...
 
+## Props
+
+> Bientôt...
+
 ## Routing
 
 > Bientôt...

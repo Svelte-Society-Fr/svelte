@@ -2,7 +2,7 @@
 title: TypeScript
 ---
 
-Vous pouvez utiliser TypeScript dans vos composants. Des extensions d'<span class="vo">[IDE](/docs/development#IDE)</span> comme l'[extension Svelte VSCode](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) vous aiderons à voir et corriger les erreurs directement dans votre éditeur, et [`svelte-check`](https://www.npmjs.com/package/svelte-check) fera la même chose en ligne de commande, que vous pouvez ajouter à votre chaîne d'intégration continue.
+Vous pouvez utiliser TypeScript dans vos composants. Des extensions d'<span class="vo">[IDE](/docs/development#ide)</span> comme l'[extension Svelte VSCode](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) vous aiderons à voir et corriger les erreurs directement dans votre éditeur, et [`svelte-check`](https://www.npmjs.com/package/svelte-check) fera la même chose en ligne de commande, que vous pouvez ajouter à votre chaîne d'intégration continue.
 
 ## Mise en place
 
@@ -41,7 +41,7 @@ Dans les deux cas, un fichier `svelte.config.js` avec `vitePreprocess` sera ajou
 
 ### Autres outils de compilation
 
-Si vous utilisez d'autres outils comme Rollup ou Webpack, installez leurs <span class="vo">[plugins](/docs/development#plugins)</span> Svelte respectifs. Pour Rollup, il s'agit de [rollup-plugin-svelte](https://github.com/sveltejs/rollup-plugin-svelte) et pour Webpack, c'est [svelte-loader](https://github.com/sveltejs/svelte-loader). Dans les deux cas, vous devez installer `typescript` et `svelte-preprocess` et ajouter le préprocesseur à la configuration du plugin (voir les documentations respectives). Si vous démarrez un nouveau projet, vous pouvez utiliser le [template rollup](https://github.com/sveltejs/template) ou le [template webpack](https://github.com/sveltejs/template-webpack) pour configurer votre projet.
+Si vous utilisez d'autres outils comme Rollup ou Webpack, installez leurs <span class="vo">[plugins](/docs/development#plugin)</span> Svelte respectifs. Pour Rollup, il s'agit de [rollup-plugin-svelte](https://github.com/sveltejs/rollup-plugin-svelte) et pour Webpack, c'est [svelte-loader](https://github.com/sveltejs/svelte-loader). Dans les deux cas, vous devez installer `typescript` et `svelte-preprocess` et ajouter le préprocesseur à la configuration du plugin (voir les documentations respectives). Si vous démarrez un nouveau projet, vous pouvez utiliser le [template rollup](https://github.com/sveltejs/template) ou le [template webpack](https://github.com/sveltejs/template-webpack) pour configurer votre projet.
 
 > Si vous démarrez un nouveau projet, nous vous recommandons plutôt d'utiliser SvelteKit ou Vite.
 
@@ -117,7 +117,7 @@ Les événements peuvent être typés avec `createEventDispatcher` :
 
 ## Surcharge des types de DOM natifs
 
-Svelte fournit des types aussi proche que possible pour chaque élément HTML du <span class="vo">[DOM](/docs/web#DOM)</span> qui existe. Parfois, vous voudrez utiliser des attributs expérimentaux ou des événements personnalisés. Dans ces cas, TypeScript lèvera une erreur de type, en indiquant qu'il ne connaît pas ces types. S'il s'agit d'un attribut ou événement standard et non expérimental, il se peut tout à fait que ce soit un type manquant dans [le typage HTML de Svelte](https://github.com/sveltejs/svelte/blob/master/elements/index.d.ts). Dans ce cas, vous êtes le bienvenue pour ouvrir une issue ou une PR pour le corriger.
+Svelte fournit des types aussi proche que possible pour chaque élément HTML du <span class="vo">[DOM](/docs/web#dom)</span> qui existe. Parfois, vous voudrez utiliser des attributs expérimentaux ou des événements personnalisés. Dans ces cas, TypeScript lèvera une erreur de type, en indiquant qu'il ne connaît pas ces types. S'il s'agit d'un attribut ou événement standard et non expérimental, il se peut tout à fait que ce soit un type manquant dans [le typage HTML de Svelte](https://github.com/sveltejs/svelte/blob/master/elements/index.d.ts). Dans ce cas, vous êtes le bienvenue pour ouvrir une issue ou une PR pour le corriger.
 
 S'il s'agit d'un attribut ou d'un événement expérimental ou personnalisé, vous pouvez étendre le typage comme suit :
 
@@ -144,7 +144,7 @@ Ensuite, assurez vous que les fichiers `d.ts` soient référencés dans `tsconfi
 
 Quelques fonctionnalités sont manquantes pour bénéficier de tous les avantages de TypeScript dans des cas plus avancés, comme pour typer qu'un composant étend une interface, pour typer les slots ou pour utiliser des génériques. Tout ceci est rendu possible en utilisant des fonctionnalités expérimentales avancées. Voir [la RFC](https://github.com/dummdidumm/rfcs/blob/ts-typedefs-within-svelte-components/text/ts-typing-props-slots-events.md) pour savoir comment définir de tels typages.
 
-> Cette <span class="vo">[API](/docs/development#API)</span> est expérimentale et peut changer à tout moment.
+> Cette <span class="vo">[API](/docs/development#api)</span> est expérimentale et peut changer à tout moment.
 
 ## Limitations
 
