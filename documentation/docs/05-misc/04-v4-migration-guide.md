@@ -163,9 +163,7 @@ Cela rend les liaisons de <span class="vo">[slots](/docs/sveltejs#slot)</span> p
 
 L'ordre dans lequel les préprocesseurs sont appliqués a changé. Désormais, les préprocesseurs sont exécutés dans l'ordre et, au sein d'un même groupe, l'ordre est le suivant : balisage, script, style.
 
-```js
-// @errors: 2304
-import { preprocess } from 'svelte/compiler';
+## Autres changements majeurs
 
 const { code } = await preprocess(
 	source,
