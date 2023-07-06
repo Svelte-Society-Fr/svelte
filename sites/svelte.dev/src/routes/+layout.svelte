@@ -78,7 +78,10 @@
 	}
 
 	:global(.text .vo a:hover) {
-		color: white;
+		box-shadow: inset 0 -1px 0 0 var(--sk-theme-1-variant);
+	}
+
+	:global(body.dark .text .vo a:hover) {
 		box-shadow: inset 0 -1px 0 0 white;
 	}
 </style>

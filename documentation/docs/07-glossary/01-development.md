@@ -33,6 +33,10 @@ function chargeLaDonnée(callback: () => void) {
 chargeLaDonnée(afficheCoucou);
 ```
 
+## Fullstack
+
+Bientôt...
+
 ## Getter / Setter
 
 Un _getter_ est une fonction qui permet de lire une valeur.
