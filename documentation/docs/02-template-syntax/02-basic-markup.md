@@ -16,7 +16,7 @@ Une balise en minuscules, comme `<div>`, indique un élément HTML standard. Une
 </div>
 ```
 
-## Attributs et <span class='vo'>[props](/docs/sveltejs#props)</span>
+## Attributs et props
 
 Par défaut, les attributs fonctionnent exactement comme leur équivalent HTML.
 
