@@ -109,7 +109,7 @@ Quelques ressources pour démarrer avec les tests unitaires :
 
 ## Un routeur est-il intégré ?
 
-La bibliothèque officielle de routage est [SvelteKit](https://kit.svelte.dev/). Sveltekit fournit un routeur basé sur le système de fichier, un rendu coté serveur (SSR) et un rechargement automatique de module (HMR) en une seule librairie facile à utiliser. Il est similaire à Next.js pour React.
+La bibliothèque officielle de <span class="vo">[routing](/docs/web#route)</span> est [SvelteKit](https://kit.svelte.dev/). Sveltekit fournit un routeur basé sur le système de fichier, un rendu coté serveur (SSR) et un rechargement automatique de module (HMR) en une seule librairie facile à utiliser. Il est similaire à Next.js pour React.
 
 Toutefois, vous pouvez utiliser n'importe quelle bibliothèque de routage de votre choix. Beaucoup de gens utilisent [page.js](https://github.com/visionmedia/page.js). Il y a aussi [navaid](https://github.com/lukeed/navaid), qui est très similaire. Et [universal-router](https://github.com/kriasoft/universal-router), qui est isomorphe avec les routes enfants, mais sans prise en charge intégrée de l'historique.
 
