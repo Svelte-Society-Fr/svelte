@@ -6,7 +6,7 @@ title: Foire aux questions
 
 Nous pensons que la meilleure manière de commencer est de jouer avec le [tutoriel](https://learn.svelte.dev/) interactif. Chaque étape est principalement axée sur un aspect spécifique et est facile à suivre. Vous éditerez et exécuterez de vrais composants directement dans votre navigateur.
 
-Cinq à dix minutes devraient suffire pour démarrer. Une heure et demi devrait vous permettre de parcourir entièrement le tutoriel.
+Cinq à dix minutes devraient suffire pour démarrer. Une heure et demie devrait vous permettre de parcourir entièrement le tutoriel.
 
 ## Où puis-je obtenir de l'aide ?
 
@@ -14,7 +14,7 @@ Si votre question est en rapport avec une certaine syntaxe, la [page d'API](http
 
 Stack Overflow est un forum populaire pour poser des questions liées à du code ou si vous bloquez sur une erreur spécifique. Lisez les questions existantes étiquetées avec [Svelte](https://stackoverflow.com/questions/tagged/svelte+or+svelte-3) ou [posez la votre](https://stackoverflow.com/questions/ask?tags=svelte) !
 
-Il existe des forums en ligne pour échanger à propos des bonnes pratiques, de l'architecture d'une application ou tout simplement pour apprendre à connaître d'autres développeurs Svelte. [Le discord anglophone](https://svelte.dev/chat), le [discord francophone](https://discord.gg/D6Dzc5m3) ou [le canal Reddit](https://www.reddit.com/r/sveltejs/) en sont des exemples. Si vous avez une question relative à du code Svelte, Stack Overflow est probablement le meilleur endroit.
+Il existe des forums en ligne pour échanger à propos des bonnes pratiques, de l'architecture d'une application ou tout simplement pour apprendre à connaître d'autres développeurs Svelte. [Le Discord anglophone](https://svelte.dev/chat), le [Discord francophone](https://discord.gg/D6Dzc5m3) ou [le canal Reddit](https://www.reddit.com/r/sveltejs/) en sont des exemples. Si vous avez une question relative à du code Svelte, Stack Overflow est probablement le meilleur endroit.
 
 ## Existe-t-il des ressources tierces ?
 
@@ -32,7 +32,7 @@ Vous pouvez utiliser prettier avec le plugin [plugin-prettier-svelte](https://ww
 
 Dans les éditeurs qui utilisent le Langage Serveur Svelte (*Svelte Language Server*) vous pouvez documenter les composants, fonctions et exports à l'aide de commentaires spécialement formatés.
 
-````sv
+```svelte
 <script>
 	/** Comment doit-on appeler l'utilisateur ? */
 	export let nom = 'world';
@@ -41,7 +41,7 @@ Dans les éditeurs qui utilisent le Langage Serveur Svelte (*Svelte Language Ser
 <!--
 @component
 Voici une documentation pour ce composant.
-Il apparaîtra au survol
+Elle apparaîtra au survol
 
 - Vous pouvez utiliser markdown ici.
 - Vous pouvez également utiliser des blocs de code ici.
@@ -92,11 +92,11 @@ La façon dont votre application est structurée et l'endroit où la logique est
 
 Une application Svelte aura généralement trois types différents de tests : Unitaires, Composants et <span class="vo">[end to end](/docs/development#end-to-end)<span> (E2E)
 
-**Tests Unitaires** : Servent à tester la logique métier en isolation. Souvent il s'agit de valider des fonction individuelles et des cas particuliers. Minimiser la surface de ces tests permet de les garder légers et rapides, et extraire un maximum de logique de vos composants Svelte vous permet d'augmenter le nombre de ce type de tests pour couvrir votre application. Lorsque vous créez un nouveau projet SvelteKit, vous avez la possibilité de choisir d'installer [Vitest](https://vitest.dev/) pour les tests unitaires. D'autres moteurs de tests pourraient être également utilisés.
+_Tests Unitaires_ : Servent à tester la logique métier en isolation. Souvent il s'agit de valider des fonction individuelles et des cas particuliers. Minimiser la surface de ces tests permet de les garder légers et rapides, et extraire un maximum de logique de vos composants Svelte vous permet d'augmenter le nombre de ce type de tests pour couvrir votre application. Lorsque vous créez un nouveau projet SvelteKit, vous avez la possibilité de choisir d'installer [Vitest](https://vitest.dev/) pour les tests unitaires. D'autres moteurs de tests pourraient être également utilisés.
 
-**Tests de composant** : Vérifier qu'un composant Svelte s'instancie et réagit comme prévu aux interactions au cours de sa vie nécessite un outil qui fournit un <span class="vo">[DOM](/docs/web#dom)</span>. Les composants peuvent être compilés (puisque Svelte est un compilateur et non une simple librairie) et montés pour permettre de vérifier la structure de l'élément, les gestionnaires d'évènements, l'état, et les autres fonctionnalités offertes par un composant Svelte. Les outils de test de composant vont d'une implémentation en mémoire type [jsdom](https://www.npmjs.com/package/jsdom) couplée à un moteur de test type [Vitest](https://vitest.dev/), à des solutions qui utilisent de vrais navigateurs pour fournir des fonctionnalités de tests visuels comme [Playwright](https://playwright.dev/docs/test-components) ou [Cypress](https://www.cypress.io/).
+_Tests de composant_ : Vérifier qu'un composant Svelte s'instancie et réagit comme prévu aux interactions au cours de sa vie nécessite un outil qui fournit un <span class="vo">[DOM](/docs/web#dom)</span>. Les composants peuvent être compilés (puisque Svelte est un compilateur et non une simple librairie) et montés pour permettre de vérifier la structure de l'élément, les gestionnaires d'évènements, l'état, et les autres fonctionnalités offertes par un composant Svelte. Les outils de test de composant vont d'une implémentation en mémoire type [jsdom](https://www.npmjs.com/package/jsdom) couplée à un moteur de test type [Vitest](https://vitest.dev/), à des solutions qui utilisent de vrais navigateurs pour fournir des fonctionnalités de tests visuels comme [Playwright](https://playwright.dev/docs/test-components) ou [Cypress](https://www.cypress.io/).
 
-**Tests <span class="vo">[end to end](/docs/development#end-to-end)</span>** : Pour vous assurer que votre application fonctionne comme prévu dans des cas réels d'utilisation, il est nécessaire de la tester d'une manière la plus proche possible de la production. Cela se fait avec des tests dits <span class="vo">[end to end](/docs/development#end-to-end)</span> (E2E) qui chargent et interagissent avec une version déployée de votre application afin de simuler les interactions utilisateur. Lorsque vous créez un nouveau projet SvelteKit, vous avez la possibilité de choisir d'installer [Playwright](https://playwright.dev/) pour les tests <span class="vo">[end to end](/docs/development#end-to-end)</span>. Il existe également d'autres librairies de tests E2E.
+_Tests <span class="vo">[end to end](/docs/development#end-to-end)</span>_ : Pour vous assurer que votre application fonctionne comme prévu dans des cas réels d'utilisation, il est nécessaire de la tester d'une manière la plus proche possible de la production. Cela se fait avec des tests dits <span class="vo">[end to end](/docs/development#end-to-end)</span> (E2E) qui chargent et interagissent avec une version déployée de votre application afin de simuler les interactions utilisateur. Lorsque vous créez un nouveau projet SvelteKit, vous avez la possibilité de choisir d'installer [Playwright](https://playwright.dev/) pour les tests <span class="vo">[end to end](/docs/development#end-to-end)</span>. Il existe également d'autres librairies de tests E2E.
 
 Quelques ressources pour démarrer avec les tests unitaires :
 
@@ -117,9 +117,9 @@ Si vous préférez une approche HTML déclarative, il existe la bibliothèque is
 
 Si vous avez besoin d'un routage basé sur le hachage côté client, consultez [svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router) ou [abstract-state-router](https://github.com/TehShrike/abstract-state-router/).
 
-[Routify](https://routify.dev) est un autre router basé sur l'arborescence de fichiers, similaire au router de SvelteKit. La version 3 supporte le rendu côté serveur natif de Svelte.
+[Routify](https://routify.dev) est un autre routeur basé sur l'arborescence de fichiers, similaire au routeur de SvelteKit. La version 3 supporte le rendu côté serveur natif de Svelte.
 
-Vous pouvez trouver une [liste de routers maintenus par la communauté sur sveltesociety.dev](https://sveltesociety.dev/components#routers).
+Vous pouvez trouver une [liste de routeurs maintenus par la communauté sur sveltesociety.dev](https://sveltesociety.dev/components#routers).
 
 ## La version 2 de Svelte est-elle toujours disponible ?
 

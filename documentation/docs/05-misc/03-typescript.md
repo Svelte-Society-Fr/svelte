@@ -2,7 +2,7 @@
 title: TypeScript
 ---
 
-Vous pouvez utiliser TypeScript dans vos composants. Des extensions d'<span class="vo">[IDE](/docs/development#ide)</span> comme l'[extension Svelte VSCode](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) vous aiderons à voir et corriger les erreurs directement dans votre éditeur, et [`svelte-check`](https://www.npmjs.com/package/svelte-check) fera la même chose en ligne de commande, que vous pouvez ajouter à votre chaîne d'intégration continue.
+Vous pouvez utiliser TypeScript dans vos composants. Des extensions d'<span class="vo">[IDE](/docs/development#ide)</span> comme l'[extension Svelte VSCode](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) vous aideront à voir et corriger les erreurs directement dans votre éditeur, et [`svelte-check`](https://www.npmjs.com/package/svelte-check) fera la même chose en ligne de commande, que vous pouvez ajouter à votre chaîne d'intégration continue.
 
 ## Mise en place
 

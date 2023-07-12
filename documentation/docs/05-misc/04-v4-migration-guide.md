@@ -4,16 +4,16 @@ title: Guide de migration Svelte 4
 
 Ce guide de migration fournit un aperçu de la manière dont vous devez migrer une application en Svelte 3 vers Svelte 4. Allez voir les <span class="vo">[PR](/docs/development#pr)</span> associées pour plus de détails au sujet de chaque changement. Utilisez le script de migration pour migrer certains de ces changements automatiquement : `npx svelte-migrate@latest svelte-4`.
 
-Si vous êtes l'auteur d'une librairie, considérez bien le choix de ne supporter que Svelte 4 ou, si cela est possible, de continuer à supporter Svelte 3 également. Comme la plupart des changements non réversibles n'affectent que peu de personne, cela est facilement faisable la plupart du temps. Enfin, n'oubliez pas de mettre à jour la plage de versions des `peerDependencies`.
+Si vous êtes l'auteur d'une librairie, considérez bien le choix de ne supporter que Svelte 4 ou, si cela est possible, de continuer à supporter Svelte 3 également. Comme la plupart des changements non réversibles n'affectent que peu de personnes, cela est facilement faisable la plupart du temps. Enfin, n'oubliez pas de mettre à jour la plage de versions des `peerDependencies`.
 
 ## Exigences minimales pour Svelte 4
 
-- Mettre à jours vers Node 16 ou plus. Les versions précédentes ne sont plus supportées. ([#8566](https://github.com/sveltejs/svelte/issues/8566))
+- Mettre à jour vers Node 16 ou plus. Les versions précédentes ne sont plus supportées. ([#8566](https://github.com/sveltejs/svelte/issues/8566))
 - Si vous utilisez SvelteKit, mettez sa version à 1.20.4 ou plus ([sveltejs/kit#10172](https://github.com/sveltejs/kit/pull/10172))
 - Si vous utilisez Vite sans SvelteKit, mettez à jour la version de `vite-plugin-svelte` à 2.4.1 ou plus ([#8516](https://github.com/sveltejs/svelte/issues/8516))
-- Si vous utilisez webpack, mettez sa version à 5 ou plus et `svelte-loader` à 3.1.8 ou plus. Les versions précédente ne sont plus supportées. ([#8515](https://github.com/sveltejs/svelte/issues/8515), [198dbcf](https://github.com/sveltejs/svelte/commit/198dbcf))
+- Si vous utilisez webpack, mettez sa version à 5 ou plus et `svelte-loader` à 3.1.8 ou plus. Les versions précédentes ne sont plus supportées. ([#8515](https://github.com/sveltejs/svelte/issues/8515), [198dbcf](https://github.com/sveltejs/svelte/commit/198dbcf))
 - Si vous utilisez Rollup, mettez la version de `rollup-plugin-svelte` à 7.1.5 ou plus ([198dbcf](https://github.com/sveltejs/svelte/commit/198dbcf))
-- Si vous utilisez TypeScript, mettez sa version à 5.0.0 ou plus. Les versions précédentes pourront probablement toujours fonctionner, mais aucune garantie n'est fait pour autant. ([#8488](https://github.com/sveltejs/svelte/issues/8488))
+- Si vous utilisez TypeScript, mettez sa version à 5.0.0 ou plus. Les versions précédentes pourront probablement toujours fonctionner, mais nous ne pouvons pas le garantir. ([#8488](https://github.com/sveltejs/svelte/issues/8488))
 
 ## Browser conditions for bundlers
 
@@ -21,9 +21,9 @@ Bundlers must now specify the browser condition when building a frontend bundle 
 
 ## Suppression des sorties de build en CJS
 
-Svelte ne supporte plus le format CommonJS (CJS) comme format de sortie de la compilation. L'API `svelte/register` a été retiré ainsi que la version de runtime CJS. Si vous avez besoin de garder le format de sortie CJS, utilisez un <span class="vo">[bundler](/docs/web#bundler)</span> pour convertir la sortie ESM en CJS avec une étape de post-build. ([#8613](https://github.com/sveltejs/svelte/issues/8613))
+Svelte ne supporte plus le format CommonJS (CJS) comme format de sortie de la compilation. L'API `svelte/register` a été retirée ainsi que la version de runtime CJS. Si vous avez besoin de garder le format de sortie CJS, utilisez un <span class="vo">[bundler](/docs/web#bundler)</span> pour convertir la sortie ESM en CJS avec une étape de post-build. ([#8613](https://github.com/sveltejs/svelte/issues/8613))
 
-## Typage plus Strict pour les fonctions Svelte
+## Typage plus strict pour les fonctions Svelte
 
 Il y a maintenant des types plus stricts pour `createEventDispatcher`, `Action`, `ActionReturn` et `onMount` :
 
@@ -50,7 +50,7 @@ dispatch('required'); // erreur, argument manquant (error, missing argument)
 dispatch('noArgument', 'surprise'); // erreur, il n'est pas possible de passer un argument (error, cannot pass an argument)
 ```
 
-- `Action` et `ActionReturn` ont maintenant un type d'argument par défault à `undefined`, ce qui signifie que vous devez typez le <span class="vo">[generic](/docs/javascript#generic)</span> si vous voulez spécifier que cette action reçoit un paramètre. Le script de migration prendra cette règle en compte automatiquement ([#7442](https://github.com/sveltejs/svelte/pull/7442))
+- `Action` et `ActionReturn` ont maintenant un type d'argument par défault à `undefined`, ce qui signifie que vous devez typer le <span class="vo">[generic](/docs/javascript#generic)</span> si vous voulez spécifier que cette action reçoit un paramètre. Le script de migration prendra cette règle en compte automatiquement ([#7442](https://github.com/sveltejs/svelte/pull/7442))
 
 ```diff
 -const action: Action = (node, params) => { .. } // ceci lèvera maintenant une erreur si vous utilisez un paramètre
@@ -76,18 +76,18 @@ onMount(
 
 ## Les Custom Elements avec Svelte
 
-La création des <span class="vo">[Custom Elements](/docs/development#custom-elements)</span> avec Svelte a complètement été refondu et significativement amélioré. L'option `tag` a été déprécié en faveur de la nouvelle option `customElement` :
+La création des <span class="vo">[Custom Elements](/docs/development#custom-elements)</span> avec Svelte a complètement été repensée et significativement améliorée. L'option `tag` a été dépréciée en faveur de la nouvelle option `customElement` :
 
 ```diff
 -<svelte:options tag="my-component" />
 +<svelte:options customElement="my-component" />
 ```
 
-Ce changement est intervenu pour permettre [une configuration plus importante](custom-elements-api#component-options) pour des cas d'usages avancés. Le code de migration ajustera votre code automatiquement. La temporalité des changements des propriétés a également légèrement changé. ([#8457](https://github.com/sveltejs/svelte/issues/8457))
+Ce changement est intervenu pour permettre [une meilleure configuration](custom-elements-api#component-options) pour des cas d'usages avancés. Le code de migration ajustera votre code automatiquement. La temporalité des changements des propriétés a également légèrement changée. ([#8457](https://github.com/sveltejs/svelte/issues/8457))
 
 ## SvelteComponentTyped est déprécié
 
-`SvelteComponentTyped` est déprécié, car `SvelteComponent` comporte tous le typage nécessaire. Remplacez toutes les instances de `SvelteComponentTyped` par `SvelteComponent`.
+`SvelteComponentTyped` est déprécié, car `SvelteComponent` contient tout le typage nécessaire. Remplacez toutes les instances de `SvelteComponentTyped` par `SvelteComponent`.
 
 ```diff
 - import { SvelteComponentTyped } from 'svelte';
@@ -97,7 +97,7 @@ Ce changement est intervenu pour permettre [une configuration plus importante](c
 + export class Foo extends SvelteComponent<{ aProp: string }> {}
 ```
 
-Si vous utilisiez `SvelteComponent` comme type d'instance de composant précédemment, vous pourriez maintenant voir une erreur de type étrange, qui est résolue en changeant ` : typeof SvelteComponent` par ` : typeof SvelteComponent<any>`.
+Si par le passé vous utilisiez `SvelteComponent` comme type d'instance de composant, vous pourriez maintenant voir une erreur de type étrange, qui est résolue en changeant ` : typeof SvelteComponent` par ` : typeof SvelteComponent<any>`.
 
 ```diff
 <script>
@@ -224,7 +224,7 @@ preprocess: [
 
 Chaque préprocesseur doit également avoir un nom. ([#8618](https://github.com/sveltejs/svelte/issues/8618))
 
-## nouvelle librairie eslint
+## Nouvelle librairie eslint
 
 `eslint-plugin-svelte3` est déprécié. Il est possible qu'il fonctionne encore avec Svelte 4, mais nous ne le garantissons pas. Nous recommandons de passer à notre nouvelle librairie [eslint-plugin-svelte] (https://github.com/sveltejs/eslint-plugin-svelte). Voir [ce ticket Github](https://github.com/sveltejs/kit/issues/10242#issuecomment-1610798405) pour des instructions sur la façon de migrer. Alternativement, vous pouvez créer un nouveau projet en utilisant `npm create svelte@latest`, sélectionner l'option eslint (et éventuellement TypeScript) et ensuite copier les fichiers associés dans votre projet existant.
 

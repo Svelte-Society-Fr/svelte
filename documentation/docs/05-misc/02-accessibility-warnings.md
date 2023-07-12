@@ -191,13 +191,13 @@ L'attribut `scope` ne devrait être utilisé que sur les éléments `<th>`.
 
 Assure que les attributs requis pour l'accessibilité soient présents sur un élément. Cela inclut les vérifications suivantes:
 
-- `<a>` devrait avoir un href (sauf s'il s'agit d'une [balise définissant un fragment](https://github.com/sveltejs/svelte/issues/4697))
-- `<area>` devrait avoir alt, aria-label ou aria-labelledby
-- `<html>` devrait avoir lang
-- `<iframe>` devrait avoir title
-- `<img>` devrait avoir alt
-- `<object>` devrait avoir title, aria-label ou aria-labelledby
-- `<input type="image">` devrait avoir alt, aria-label ou aria-labelledby
+- `<a>` devrait avoir un `href` (sauf s'il s'agit d'une [balise définissant un fragment](https://github.com/sveltejs/svelte/issues/4697))
+- `<area>` devrait avoir `alt`, `aria-label` ou `aria-labelledby`
+- `<html>` devrait avoir `lang`
+- `<iframe>` devrait avoir `title`
+- `<img>` devrait avoir `alt`
+- `<object>` devrait avoir `title`, `aria-label` ou `aria-labelledby`
+- `<input type="image">` devrait avoir `alt`, `aria-label` ou `aria-labelledby`
 
 ```svelte
 <!-- A11y: <input type=\"image\"> element should have an alt, aria-label or aria-labelledby attribute -->
