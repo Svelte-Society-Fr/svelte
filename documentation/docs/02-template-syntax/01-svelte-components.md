@@ -24,7 +24,7 @@ Un bloc `<script>` contient du JavaScript qui est exécuté lorsqu'une instance 
 
 ### 1. `export` crée une props de composant
 
-Svelte utilise le mot-clé `export` pour déclarer une variable en tant que _propriété_ ou <span class='vo'>[_props_](/docs/sveltejs#props)</span>, ce qui la rend accessible lorsque l'on consomme le composant (voir la section sur les [attributs et props](/docs#template-syntax-attributes-and-props)) pour plus d'informations.
+Svelte utilise le mot-clé `export` pour déclarer une variable en tant que _propriété_ ou <span class='vo'>[_props_](/docs/sveltejs#props)</span>, ce qui la rend accessible lorsque l'on consomme le composant (voir la section sur les [attributs et props](/docs/basic-markup#attributs-et-props)) pour plus d'informations.
 
 ```svelte
 <script>
@@ -38,7 +38,7 @@ Svelte utilise le mot-clé `export` pour déclarer une variable en tant que _pro
 
 Vous pouvez spécifier une valeur initiale par défaut d'une <span class='vo'>[props](/docs/sveltejs#props)</span>. Elle sera utilisée si la <span class='vo'>[props](/docs/sveltejs#props)</span> n'est pas fournie au composant par le parent lors de l'instanciation du composant (ou si la valeur fournie est `undefined`). Notez que si les valeurs des <span class='vo'>[props](/docs/sveltejs#props)</span> sont mises à jour a posteriori, n'importe quelle valeur de <span class='vo'>[props](/docs/sveltejs#props)</span> non spécifiée sera mise à `undefined` (plutôt qu'à sa valeur initiale).
 
-En mode développement (voir les [options de compilation](/docs#compile-time-svelte-compile)), un <span class='vo'>[warning](/docs/development#warning)</span> sera affiché si aucune valeur initiale par défaut n'est fournie et que le parent ne précise pas de valeur. Pour museler ce <span class='vo'>[warning](/docs/development#warning)</span>, assurez-vous qu'une valeur initiale par défaut est définie, même si celle-ci est `undefined`.
+En mode développement (voir les [options de compilation](/docs/svelte-compiler#compile)), un <span class='vo'>[warning](/docs/development#warning)</span> sera affiché si aucune valeur initiale par défaut n'est fournie et que le parent ne précise pas de valeur. Pour museler ce <span class='vo'>[warning](/docs/development#warning)</span>, assurez-vous qu'une valeur initiale par défaut est définie, même si celle-ci est `undefined`.
 
 ```svelte
 <script>
@@ -63,7 +63,7 @@ Si vous exportez une `const`, une `class` ou une `function`, elle sera en lectur
 </script>
 ```
 
-Les <span class='vo'>[props](/docs/sveltejs#props)</span> en lecture seule sont accessibles comme propriétés de l'instance en utilisant la [syntaxe `bind:this`](/docs#template-syntax-component-directives-bind-this).
+Les <span class='vo'>[props](/docs/sveltejs#props)</span> en lecture seule sont accessibles comme propriétés de l'instance en utilisant la [syntaxe `bind:this`](/docs/component-directives#bind-this).
 
 Vous pouvez utiliser les mots réservés comme noms de <span class='vo'>[props](/docs/sveltejs#props)</span>.
 
@@ -203,7 +203,7 @@ Si une expression est entièrement constituée d'une assignation à une variable
 
 ### 4. Préfixer les stores avec `$` pour accéder à leur valeur
 
-Un <span class="vo">[_store_](/docs/sveltejs#store)</span> est un objet qui permet un accès réactif à une valeur via un simple _contrat de store_. Le [module `svelte/store`](/docs#run-time-svelte-store) contient des implémentations minimales qui remplissent ce contrat.
+Un <span class="vo">[_store_](/docs/sveltejs#store)</span> est un objet qui permet un accès réactif à une valeur via un simple _contrat de store_. Le [module `svelte/store`](/docs/svelte-store) contient des implémentations minimales qui remplissent ce contrat.
 
 À chaque fois que vous avez une référence à un <span class="vo">[store](/docs/sveltejs#store)</span>, vous pouvez accéder à sa valeur au sein d'un composant en le préfixant avec le caractère `$`. Cela indique à Svelte de déclarer la variable préfixée, de s'abonner au <span class="vo">[store](/docs/sveltejs#store)</span> à l'initialisation du composant, et de se désabonner lorsque c'est pertinent.
 
@@ -235,7 +235,7 @@ Les variables locales (qui ne représentent pas la valeur d'un <span class="vo">
 store = { subscribe: (subscription: (value: any) => void) => (() => void), set?: (value: any) => void }
 ```
 
-Vous pouvez créer vos propres <span class="vo">[stores](/docs/sveltejs#store)</span> sans dépendre de [`svelte/store`](/docs#run-time-svelte-store), en implémentant vous-même le _contrat de store_ :
+Vous pouvez créer vos propres <span class="vo">[stores](/docs/sveltejs#store)</span> sans dépendre de [`svelte/store`](/docs/svelte-store), en implémentant vous-même le _contrat de store_ :
 
 1. Un <span class="vo">[store](/docs/sveltejs#store)</span> doit contenir une méthode `.subscribe`, qui doit accepter comme argument une fonction d'abonnement. Lorsque `.subscribe` est appelée, cette fonction d'abonnement doit être appelée immédiatement et de manière synchrone avec la valeur actuelle du <span class="vo">[store](/docs/sveltejs#store)</span>. Toutes les fonctions d'abonnements actives d'un <span class="vo">[store](/docs/sveltejs#store)</span> doivent ensuite être appelées de manière synchrone à chaque fois que la valeur du <span class="vo">[store](/docs/sveltejs#store)</span> est mise à jour.
 2. La méthode `.subscribe` doit retourner une fonction de désabonnement. Exécuter une fonction de désabonnement doit mettre fin à l'abonnement, et la fonction d'abonnement correspondant ne doit plus être appelée par le <span class="vo">[store](/docs/sveltejs#store)</span>.
