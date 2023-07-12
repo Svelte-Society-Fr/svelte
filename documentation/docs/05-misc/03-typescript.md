@@ -71,7 +71,7 @@ Les <span class="vo">[props](/docs/web#props)</span> peuvent directement être t
 
 ### Slots
 
-Les slots et les types de leurs props sont déduits des types des props qui leurs sont passées :
+Les <span class="vo">[slots](/docs/sveltejs#slot)</span> et les types de leurs <span class="vo">[props](/docs/web#props)</span> sont déduits des types des props qui leurs sont passées :
 
 ```svelte
 <script lang="ts">
@@ -117,7 +117,7 @@ Les événements peuvent être typés avec `createEventDispatcher` :
 
 ## Surcharge des types de DOM natifs
 
-Svelte fournit des types aussi proche que possible pour chaque élément HTML du <span class="vo">[DOM](/docs/web#dom)</span> qui existe. Parfois, vous voudrez utiliser des attributs expérimentaux ou des événements personnalisés. Dans ces cas, TypeScript lèvera une erreur de type, en indiquant qu'il ne connaît pas ces types. S'il s'agit d'un attribut ou événement standard et non expérimental, il se peut tout à fait que ce soit un type manquant dans [le typage HTML de Svelte](https://github.com/sveltejs/svelte/blob/master/elements/index.d.ts). Dans ce cas, vous êtes le bienvenue pour ouvrir une issue ou une PR pour le corriger.
+Svelte fournit des types aussi proche que possible pour chaque élément HTML du <span class="vo">[DOM](/docs/web#dom)</span> qui existe. Parfois, vous voudrez utiliser des attributs expérimentaux ou des événements personnalisés. Dans ces cas, TypeScript lèvera une erreur de type, en indiquant qu'il ne connaît pas ces types. S'il s'agit d'un attribut ou événement standard et non expérimental, il se peut tout à fait que ce soit un type manquant dans [le typage HTML de Svelte](https://github.com/sveltejs/svelte/blob/master/elements/index.d.ts). Dans ce cas, vous êtes le bienvenue pour ouvrir une <span class="vo">[issue](/docs/development#issue)</span> ou une <span class="vo">[PR](/docs/development#pr)</span> pour le corriger.
 
 S'il s'agit d'un attribut ou d'un événement expérimental ou personnalisé, vous pouvez étendre le typage comme suit :
 
@@ -142,7 +142,7 @@ Ensuite, assurez vous que les fichiers `d.ts` soient référencés dans `tsconfi
 
 ## Types avancés expérimentaux
 
-Quelques fonctionnalités sont manquantes pour bénéficier de tous les avantages de TypeScript dans des cas plus avancés, comme pour typer qu'un composant étend une interface, pour typer les slots ou pour utiliser des génériques. Tout ceci est rendu possible en utilisant des fonctionnalités expérimentales avancées. Voir [la RFC](https://github.com/dummdidumm/rfcs/blob/ts-typedefs-within-svelte-components/text/ts-typing-props-slots-events.md) pour savoir comment définir de tels typages.
+Quelques fonctionnalités sont manquantes pour bénéficier de tous les avantages de TypeScript dans des cas plus avancés, comme pour typer qu'un composant étend une interface, pour typer les <span class="vo">[slots](/docs/sveltejs#slot)</span> ou pour utiliser des génériques. Tout ceci est rendu possible en utilisant des fonctionnalités expérimentales avancées. Voir [la RFC](https://github.com/dummdidumm/rfcs/blob/ts-typedefs-within-svelte-components/text/ts-typing-props-slots-events.md) pour savoir comment définir de tels typages.
 
 > Cette <span class="vo">[API](/docs/development#api)</span> est expérimentale et peut changer à tout moment.
 

@@ -21,7 +21,7 @@ Bundlers must now specify the browser condition when building a frontend bundle 
 
 ## Suppression des sorties de build en CJS
 
-Svelte ne supporte plus le format CommonJS (CJS) comme format de sortie de la compilation. L'API `svelte/register` a été retirée ainsi que la version de runtime CJS. Si vous avez besoin de garder le format de sortie CJS, utilisez un <span class="vo">[bundler](/docs/web#bundler)</span> pour convertir la sortie ESM en CJS avec une étape de post-build. ([#8613](https://github.com/sveltejs/svelte/issues/8613))
+Svelte ne supporte plus le format CommonJS (CJS) comme format de sortie de la compilation. L'<span class="vo">[API](/docs/development#api)</span> `svelte/register` a été retirée ainsi que la version de runtime CJS. Si vous avez besoin de garder le format de sortie CJS, utilisez un <span class="vo">[bundler](/docs/web#bundler)</span> pour convertir la sortie ESM en CJS avec une étape de post-build. ([#8613](https://github.com/sveltejs/svelte/issues/8613))
 
 ## Typage plus strict pour les fonctions Svelte
 
@@ -136,7 +136,7 @@ Pour rendre les transitions globales, ajoutez le modificateur `|global` - elles 
 
 ## Les binding de slot par défaut
 
-Les liaisons de slots par défaut ne sont plus exposées aux slots nommés et vice versa :
+Les liaisons de <span class="vo">[slots](/docs/sveltejs#slot)</span> par défaut ne sont plus exposées aux slots nommés et vice versa :
 
 ```svelte
 <script>
@@ -153,7 +153,7 @@ Les liaisons de slots par défaut ne sont plus exposées aux slots nommés et vi
 </Nested>
 ```
 
-Cela rend les liaisons de slots plus cohérentes car le comportement est indéfini lorsque, par exemple, le slot par défaut provient d'une liste et que le slot nommé n'en fait pas partie. ([#6049](https://github.com/sveltejs/svelte/issues/6049))
+Cela rend les liaisons de <span class="vo">[slots](/docs/sveltejs#slot)</span> plus cohérentes car le comportement est indéfini lorsque, par exemple, le slot par défaut provient d'une liste et que le slot nommé n'en fait pas partie. ([#6049](https://github.com/sveltejs/svelte/issues/6049))
 
 ## Préprocesseurs
 
@@ -231,10 +231,10 @@ Chaque préprocesseur doit également avoir un nom. ([#8618](https://github.com/
 ## Autres changements majeurs
 
 - l'attribut `inert` est maintenant appliqué aux éléments sortants pour les rendre invisibles aux technologies d'assistance et empêcher l'interaction. ([#8628](https://github.com/sveltejs/svelte/pull/8628))
-- le runtime utilise maintenant `classList.toggle(name, boolean)` qui peut ne pas fonctionner dans les très vieux navigateurs. Envisagez d'utiliser un [polyfill](https://github.com/eligrey/classList.js) si vous avez besoin de supporter ces navigateurs. ([#8629](https://github.com/sveltejs/svelte/issues/8629))
-- le runtime utilise maintenant le constructeur `CustomEvent` qui peut ne pas fonctionner dans les très vieux navigateurs. Envisagez d'utiliser un [polyfill] (https://github.com/theftprevention/event-constructor-polyfill/tree/master) si vous avez besoin de supporter ces navigateurs. ([#8775](https://github.com/sveltejs/svelte/pull/8775))
+- le <span class="vo">[runtime](/docs/development#runtime)</span> utilise maintenant `classList.toggle(name, boolean)` qui peut ne pas fonctionner dans les très vieux navigateurs. Envisagez d'utiliser un [polyfill](https://github.com/eligrey/classList.js) si vous avez besoin de supporter ces navigateurs. ([#8629](https://github.com/sveltejs/svelte/issues/8629))
+- le <span class="vo">[runtime](/docs/development#runtime)</span> utilise maintenant le constructeur `CustomEvent` qui peut ne pas fonctionner dans les très vieux navigateurs. Envisagez d'utiliser un [polyfill] (https://github.com/theftprevention/event-constructor-polyfill/tree/master) si vous avez besoin de supporter ces navigateurs. ([#8775](https://github.com/sveltejs/svelte/pull/8775))
 - Les personnes qui implémentent leurs propres <span class="vo">[stores](/docs/svelte#store)</span> en utilisant l'interface `StartStopNotifier` (qui est passée à la fonction create de `writable` etc) de `svelte/store` doivent maintenant passer une fonction de mise à jour en plus de la fonction set. Cela n'a aucun effet sur les personnes qui utilisent des stores ou qui créent des stores en utilisant les stores Svelte existants. ([#6750](https://github.com/sveltejs/svelte/issues/6750))
-- `derived` lancera maintenant une erreur sur les valeurs falsy au lieu des stores qui lui sont passés. ([#7947](https://github.com/sveltejs/svelte/issues/7947))
-- les définitions de type pour `svelte/internal` ont été supprimées pour décourager encore plus l'utilisation de ces méthodes internes qui ne sont pas des API publiques. La plupart de ces éléments seront probablement modifiés pour Svelte 5.
-- La suppression des noeuds du DOM se fait maintenant par lots, ce qui modifie légèrement l'ordre, ce qui peut affecter l'ordre des événements déclenchés si vous utilisez un `MutationObserver` sur ces éléments ([#8763](https://github.com/sveltejs/svelte/pull/8763))
-- si vous avez étendu les typages globaux à travers l'espace de nom `svelte.JSX` auparavant, vous devez les migrer pour utiliser l'espace de nom `svelteHTML`. De même, si vous avez utilisé l'espace de nom `svelte.JSX` pour utiliser des définitions de types, vous devez les migrer pour utiliser les types de `svelte/elements` à la place. Vous pouvez trouver plus d'informations sur ce qu'il faut faire [ici](https://github.com/sveltejs/language-tools/blob/master/docs/preprocessors/typescript.md#im-getting-deprecation-warnings-for-sveltejsx--i-want-to-migrate-to-the-new-typings)
+- `derived` lancera maintenant une erreur sur les valeurs <span class="vo">[falsy](/docs/development#falsy)</span> au lieu des <span class="vo">[stores](/docs/svelte#store)</span> qui lui sont passés. ([#7947](https://github.com/sveltejs/svelte/issues/7947))
+- les définitions de type pour `svelte/internal` ont été supprimées pour décourager encore plus l'utilisation de ces méthodes internes qui ne sont pas des <span class="vo">[API](/docs/development#api)</span> publiques. La plupart de ces éléments seront probablement modifiés pour Svelte 5.
+- La suppression des noeuds du <span class="vo">[DOM](/docs/web#dom)</span> se fait maintenant par lots, ce qui modifie légèrement l'ordre, ce qui peut affecter l'ordre des événements déclenchés si vous utilisez un `MutationObserver` sur ces éléments ([#8763](https://github.com/sveltejs/svelte/pull/8763))
+- si vous avez étendu les typages globaux à travers le <span class="vo">[namespace](/docs/development#namespacepnpm)</span> `svelte.JSX` auparavant, vous devez les migrer pour utiliser le namespace `svelteHTML`. De même, si vous avez utilisé le namespace `svelte.JSX` pour utiliser des définitions de types, vous devez les migrer pour utiliser les types de `svelte/elements` à la place. Vous pouvez trouver plus d'informations sur ce qu'il faut faire [ici](https://github.com/sveltejs/language-tools/blob/master/docs/preprocessors/typescript.md#im-getting-deprecation-warnings-for-sveltejsx--i-want-to-migrate-to-the-new-typings)

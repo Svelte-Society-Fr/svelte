@@ -26,7 +26,7 @@ Il existe une [extension VS Code officielle pour Svelte](https://marketplace.vis
 
 ## Existe-t-il un outil pour formater automatiquement mes fichiers .svelte ?
 
-Vous pouvez utiliser prettier avec le plugin [plugin-prettier-svelte](https://www.npmjs.com/package/prettier-plugin-svelte).
+Vous pouvez utiliser prettier avec le <span class="vo">[plugin](/docs/development#plugin)</span> [plugin-prettier-svelte](https://www.npmjs.com/package/prettier-plugin-svelte).
 
 ## Comment documenter mes composants ?
 
@@ -129,4 +129,4 @@ La documentation est toujours disponible [ici](https://v2.svelte.dev/guide).
 
 ## Comment puis-je recharger un module automatiquement ?
 
-Nous vous recommandons d'utiliser [SvelteKit](https://kit.svelte.dev/), qui prend en charge le rechargement automatique (HMR) prêt à l'emploi et est construit avec [Vite](https://vitejs.dev/) et [svelte-hmr](https://github.com/sveltejs/svelte-hmr). Il existe également des plugins communautaires pour [rollup](https://github.com/rixo/rollup-plugin-svelte-hot) et [webpack](https://github.com/sveltejs/svelte-loader).
+Nous vous recommandons d'utiliser [SvelteKit](https://kit.svelte.dev/), qui prend en charge le rechargement automatique (HMR) prêt à l'emploi et est construit avec [Vite](https://vitejs.dev/) et [svelte-hmr](https://github.com/sveltejs/svelte-hmr). Il existe également des <span class="vo">[plugins](/docs/development#plugin)</span> communautaires pour [rollup](https://github.com/rixo/rollup-plugin-svelte-hot) et [webpack](https://github.com/sveltejs/svelte-loader).

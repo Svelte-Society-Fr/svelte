@@ -25,7 +25,7 @@ Assure de ne pas utiliser l'attribut `accesskey` sur des éléments. L'attribu
 
 ## `a11y-aria-activedescendant-has-tabindex`
 
-Un élément avec `aria-activedescendant`  doit pouvoir être navigable en utilisant la touche "Tabulation", il doit donc avoir un `tabindex` intrinsèque, ou déclarer `tabindex` comme attribut.
+Un élément avec `aria-activedescendant`  doit pouvoir être navigable en utilisant la touche "Tab", il doit donc avoir un `tabindex` intrinsèque, ou déclarer `tabindex` comme attribut.
 
 ```svelte
 <!-- A11y: Elements with attribute aria-activedescendant should have tabindex value -->
@@ -34,7 +34,7 @@ Un élément avec `aria-activedescendant`  doit pouvoir être navigable en utili
 
 ## `a11y-aria-attributes`
 
-Certains éléments DOM spéciaux ne prennent pas en charge les rôles, états et propriétés ARIA. C'est souvent parce qu'ils ne sont pas visibles, comme `meta`, `html`, `script`, `style`. Cette règle garantit que ces éléments DOM ne contiennent pas des `aria-*` accessoires.
+Certains éléments <span class="vo">[DOM](/docs/web#dom)</span> spéciaux ne prennent pas en charge les rôles, états et propriétés <span class="vo">[ARIA](/docs/web#aria)</span>. C'est souvent parce qu'ils ne sont pas visibles, comme `meta`, `html`, `script`, `style`. Cette règle garantit que ces éléments DOM ne contiennent pas des `aria-*` accessoires.
 
 ```svelte
 <!-- A11y: <meta> should not have aria-* attributes -->
@@ -76,7 +76,7 @@ Les éléments suivants sont visuellement distrayants: `<marquee>` et `<blink
 
 ## `a11y-hidden`
 
-Certains éléments DOM sont utiles pour la navigation avec lecteur d'écran et ne doivent pas être cachés.
+Certains éléments <span class="vo">[DOM](/docs/web#dom)</span> sont utiles pour la navigation avec lecteur d'écran et ne doivent pas être cachés.
 
 <!-- prettier-ignore -->
 ```svelte
@@ -170,7 +170,7 @@ Les sous-titres doivent contenir toutes les informations importantes et pertinen
 
 ## `a11y-misplaced-role`
 
-Certains éléments DOM réservés ne prennent pas en charge les rôles, états et propriétés ARIA. Cela est souvent dû à leur invisibilité, par exemple `meta`, `html`, `script`, `style`. Cette règle impose que ces éléments DOM ne contiennent pas l'attribut `role`.
+Certains éléments <span class="vo">[DOM](/docs/web#dom)</span> réservés ne prennent pas en charge les rôles, états et propriétés <span class="vo">[ARIA](/docs/web#aria)</span>. Cela est souvent dû à leur invisibilité, par exemple `meta`, `html`, `script`, `style`. Cette règle impose que ces éléments DOM ne contiennent pas l'attribut `role`.
 
 ```svelte
 <!-- A11y: <meta> should not have role attribute -->
@@ -236,7 +236,7 @@ Assure que `on:mouseover` and `on:mouseout` soient accompagnés de `on:focus` et
 
 ## `a11y-no-redundant-roles`
 
-Certains éléments HTML ont des rôles ARIA par défaut. Donner à ces éléments un rôle ARIA déjà défini par le navigateur [n'a aucun effet](https://www.w3.org/TR/using-aria/#aria-does-nothing) et est redondant.
+Certains éléments HTML ont des rôles <span class="vo">[ARIA](/docs/web#aria)</span> par défaut. Donner à ces éléments un rôle ARIA déjà défini par le navigateur [n'a aucun effet](https://www.w3.org/TR/using-aria/#aria-does-nothing) et est redondant.
 
 ```svelte
 <!-- A11y: Redundant role 'button' -->
@@ -248,7 +248,7 @@ Certains éléments HTML ont des rôles ARIA par défaut. Donner à ces élémen
 
 ## `a11y-no-interactive-element-to-noninteractive-role`
 
-Les rôles [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/#usage_intro) ne devraient pas être utilisés pour convertir un élément interactif en un élément non interactif. Les rôles ARIA non interactifs incluent `article`, `banner`, `complementary`, `img`, `listitem`, `main`, `region` et `tooltip`.
+Les rôles [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/#usage_intro) ne devraient pas être utilisés pour convertir un élément interactif en un élément non interactif. Les rôles <span class="vo">[ARIA](/docs/web#aria)</span> non interactifs incluent `article`, `banner`, `complementary`, `img`, `listitem`, `main`, `region` et `tooltip`.
 
 ```svelte
 <!-- A11y: <textarea> cannot have role 'listitem' -->
@@ -276,7 +276,7 @@ La navigation à l'aide de la touche Tab doit être limitée aux éléments de l
 
 ## a11y-no-static-element-interactions
 
-Les éléments comme un `<div>` avec des gestionnaires d'événements comme `click` doivent avoir un rôle ARIA.
+Les éléments comme un `<div>` avec des gestionnaires d'événements comme `click` doivent avoir un rôle <span class="vo">[ARIA](/docs/web#aria)</span>.
 
 <!-- prettier-ignore -->
 ```svelte
@@ -296,7 +296,7 @@ Les éléments comme un `<div>` avec des gestionnaires d'événements comme `cli
 
 ## `a11y-role-has-required-aria-props`
 
-Les éléments avec des rôles ARIA doivent avoir tous les attributs requis pour ce rôle.
+Les éléments avec des rôles <span class="vo">[ARIA](/docs/web#aria)</span> doivent avoir tous les attributs requis pour ce rôle.
 
 ```svelte
 <!-- A11y: A11y: Elements with the ARIA role "checkbox" must have the following attributes defined: "aria-checked" -->
@@ -317,7 +317,7 @@ Les éléments avec un rôle explicite ou implicite doivent contenir uniquement 
 
 ## `a11y-structure`
 
-Assure que certains éléments DOM aient la bonne structure.
+Assure que certains éléments <span class="vo">[DOM](/docs/web#dom)</span> aient la bonne structure.
 
 ```svelte
 <!-- A11y: <figcaption> must be an immediate child of <figure> -->
@@ -328,7 +328,7 @@ Assure que certains éléments DOM aient la bonne structure.
 
 ## `a11y-unknown-aria-attribute`
 
-Assure que seuls les attributs ARIA connus soient utilisés. Cela est basé sur la spécification [WAI-ARIA States and Properties](https://www.w3.org/WAI/PF/aria-1.1/states_and_properties).
+Assure que seuls les attributs <span class="vo">[ARIA](/docs/web#aria)</span> connus soient utilisés. Cela est basé sur la spécification [WAI-ARIA States and Properties](https://www.w3.org/WAI/PF/aria-1.1/states_and_properties).
 
 ```svelte
 <!-- A11y: Unknown aria attribute 'aria-labeledby' (did you mean 'labelledby'?) -->
@@ -337,7 +337,7 @@ Assure que seuls les attributs ARIA connus soient utilisés. Cela est basé sur 
 
 ## `a11y-unknown-role`
 
-Les éléments avec des rôles ARIA doivent utiliser un rôle ARIA valide et non abstrait. Une référence aux définitions de rôle peut être trouvée sur le site [WAI-ARIA](https://www.w3.org/TR/wai-aria/#role_definitions).
+Les éléments avec des rôles <span class="vo">[ARIA](/docs/web#aria)</span> doivent utiliser un rôle ARIA valide et non abstrait. Une référence aux définitions de rôle peut être trouvée sur le site [WAI-ARIA](https://www.w3.org/TR/wai-aria/#role_definitions).
 
 <!-- prettier-ignore -->
 ```svelte
