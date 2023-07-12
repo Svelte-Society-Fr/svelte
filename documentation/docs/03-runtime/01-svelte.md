@@ -226,8 +226,6 @@ Les événements peuvent être annulables en passant un troisième paramètre à
 Vous pouvez typer le générateur d'évènement pour définir quels évènements il peut recevoir. Cela rendra votre
 code plus solide à la fois dans le composant (les mauvais appels seront mis en valeur) et lorsque vous utiliserez le composant (les types d'évènements seront réduits). Voir [cette section](typescript#script-lang-ts-events) pour plus de détail.
 
-You can type the event dispatcher to define which events it can receive. This will make your code more type safe both within the component (wrong calls are flagged) and when using the component (types of the events are now narrowed). See [here](typescript#script-lang-ts-events) how to do it.
-
 ## Types
 
 > TYPES: svelte
