@@ -8,7 +8,7 @@ title: Directives de composant
 on:eventname={handler}
 ```
 
-Les composants peuvent émettre des évènements en utilisant [createEventDispatcher](/docs#run-time-svelte-createeventdispatcher), ou en relayant les évènements <span class='vo'>[DOM](/docs/web#dom)</span>. Il est possible d'écouter des évènements de composant de la même manière que pour des évènements <span class='vo'>[DOM](/docs/web#dom)</span> :
+Les composants peuvent émettre des évènements en utilisant [createEventDispatcher](/docs/svelte#createeventdispatcher), ou en relayant les évènements <span class='vo'>[DOM](/docs/web#dom)</span>. Il est possible d'écouter des évènements de composant de la même manière que pour des évènements <span class='vo'>[DOM](/docs/web#dom)</span> :
 
 ```svelte
 <UnComposant on:peuimporte={handler} />

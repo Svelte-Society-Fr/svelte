@@ -743,7 +743,7 @@ DOMRect {
 
 Une animation est déclenchée quand le contenu d'un [bloc `each` à clé](/docs/logic-blocks#each) est réordonné. Les animations ne sont pas jouées lorsqu'un élément est ajouté ou supprimé, seulement lorsque l'indice d'un élément de liste change au sein d'un bloc `each`. Les directives `animate:` doivent appartenir à un élément enfant _direct_ d'un bloc `each` à clé.
 
-Les animations peuvent être utilisées avec les [fonctions d'animation natives](/docs/svelte-animate) de Svelte ou avec des [fonctions d'animation personnalisées](/docs/element-directives#custom-transition-functions).
+Les animations peuvent être utilisées avec les [fonctions d'animation natives](/docs/svelte-animate) de Svelte ou avec des [fonctions d'animation personnalisées](/docs/element-directives#fonctions-d-animation-personnalis-es).
 
 ```svelte
 <!-- Quand `list` est réordonnée, l'animation sera jouée -->

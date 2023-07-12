@@ -318,7 +318,7 @@ Les options disponibles sont:
 
 * `immutable={true}` — vous n'utilisez aucune donnée mutable, le compilateur peut donc se contenter d'effectuer des vérifications d'égalité par référence pour déterminer si des valeurs ont changé
 * `immutable={false}` — utilisé par défaut. Svelte sera plus conservatif pour vérifier si des objets mutables ont changé
-* `accessors={true}` — ajoute des <span class="vo">[getters](/docs/development#getter)</span> et <span class="vo">[setters](/docs/development#setter)</span> aux <span class="vo">[props](/docs/sveltejs#props)</span> d'un composant
+* `accessors={true}` — ajoute des <span class="vo">[getters](/docs/development#getter-setter)</span> et <span class="vo">[setters](/docs/development#getter-setter)</span> aux <span class="vo">[props](/docs/sveltejs#props)</span> d'un composant
 * `accessors={false}` — utilisé par défaut
 * `namespace="..."` — le <span class="vo">[namespace](/docs/development#namespace)</span> où ce composant sera utilisé, le plus souvent "svg" ; utilisez le <span class="vo">[namespace](/docs/development#namespace)</span> "foreign" pour désactiver l'insensibilité à la casse des noms d'attributs ainsi que les avertissements spécifiques au HTML
 * `tag="..."` — le nom à utiliser à la compilation de ce composant en <span class="vo">[web component](/docs/web#web-component)</span>
