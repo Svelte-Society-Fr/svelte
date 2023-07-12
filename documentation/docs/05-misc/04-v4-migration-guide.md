@@ -157,7 +157,72 @@ Cela rend les liaisons de slots plus cohérentes car le comportement est indéfi
 
 ## Préprocesseurs
 
-L'ordre dans lequel les préprocesseurs sont appliqués a changé. Désormais, les préprocesseurs sont exécutés dans l'ordre et, au sein d'un même groupe, l'ordre est le suivant : balisage, script, style. Chaque préprocesseur doit également avoir un nom. ([#8618](https://github.com/sveltejs/svelte/issues/8618))
+L'ordre dans lequel les préprocesseurs sont appliqués a changé. Désormais, les préprocesseurs sont exécutés dans l'ordre et, au sein d'un même groupe, l'ordre est le suivant : balisage, script, style.
+
+```js
+// @errors: 2304
+import { preprocess } from 'svelte/compiler';
+
+const { code } = await preprocess(
+	source,
+	[
+		{
+			markup: () => {
+				console.log('markup-1');
+			},
+			script: () => {
+				console.log('script-1');
+			},
+			style: () => {
+				console.log('style-1');
+			}
+		},
+		{
+			markup: () => {
+				console.log('markup-2');
+			},
+			script: () => {
+				console.log('script-2');
+			},
+			style: () => {
+				console.log('style-2');
+			}
+		}
+	],
+	{
+		filename: 'App.svelte'
+	}
+);
+
+// Svelte 3 logs:
+// markup-1
+// markup-2
+// script-1
+// script-2
+// style-1
+// style-2
+
+// Svelte 4 logs:
+// markup-1
+// script-1
+// style-1
+// markup-2
+// script-2
+// style-2
+```
+
+Ceci peut vous affectez si vous utilisez par exemple `MDsveX` - pour lequel vous devez vous assurer qu'il vient avant n'importe quel préprocesseur de script ou de style :
+
+```diff
+preprocess: [
+-	vitePreprocess(),
+-	mdsvex(mdsvexConfig)
++	mdsvex(mdsvexConfig),
++	vitePreprocess()
+]
+```
+
+Chaque préprocesseur doit également avoir un nom. ([#8618](https://github.com/sveltejs/svelte/issues/8618))
 
 ## nouvelle librairie eslint
 

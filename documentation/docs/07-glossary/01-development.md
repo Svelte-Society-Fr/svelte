@@ -64,7 +64,15 @@ class Personne {
 
 Vous trouverez plus de détails sur les [getters](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/get) et [setters](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/set) en JavaScript dans la documentation de MDN.
 
+## Hash
+
+> Bientôt...
+
 ## IDE
+
+> Bientôt...
+
+## Intellisense
 
 > Bientôt...
 
@@ -108,11 +116,19 @@ Vous trouverez plus de détails sur les [getters](https://developer.mozilla.org/
 
 > Bientôt...
 
+## Thread
+
+> Bientôt...
+
 ## Template
 
 > Bientôt...
 
 ## Tooltip
+
+> Bientôt...
+
+## Warning
 
 > Bientôt...
 
@@ -141,3 +157,7 @@ nouveauBonjour("Jean") // "Bonjour Jean! Comment vas-tu?"
 ```
 
 > Par extension, un _wrapper_ désigne également un composant qui "enveloppe" une autre composant afin de lui apporter des fonctionnalités supplémentaires (style, comportement, etc.).
+
+## Writable
+
+> Bientôt...
