@@ -286,7 +286,7 @@ export function construct_svelte_component_dev(component, props) {
  * export class MyComponent extends SvelteComponent<{foo: string}> {}
  * ```
  *
- * Typer ceci permet aux IDEs comme VS Code qui ont l'extension Svelte de fournir
+ * Typer ceci permet aux <span class='vo'>[IDEs](/docs/development#ide)</span> comme VS Code qui ont l'extension Svelte de fournir
  * de l'intellisense, et vous pouvez alors utiliser le composant de cette manière dans un
  * fichier Svelte avec Typescript :
  *
