@@ -398,6 +398,7 @@ use:action={parameters}
 ```
 
 ```ts
+// @noErrors
 action = (node: HTMLElement, parameters: any) => {
 	update?: (parameters: any) => void,
 	destroy?: () => void
@@ -716,6 +717,7 @@ animate:name={params}
 ```
 
 ```ts
+// @noErrors
 animation = (node: HTMLElement, { from: DOMRect, to: DOMRect } , params: any) => {
 	delay?: number,
 	duration?: number,
@@ -726,6 +728,7 @@ animation = (node: HTMLElement, { from: DOMRect, to: DOMRect } , params: any) =>
 ```
 
 ```ts
+// @noErrors
 DOMRect {
 	bottom: number,
 	height: number,
