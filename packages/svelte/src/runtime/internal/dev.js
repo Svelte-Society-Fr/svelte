@@ -276,7 +276,7 @@ export function construct_svelte_component_dev(component, props) {
  *
  * #### Exemple :
  *
- * Vous avez une libraire de composants sur npm appelée `component-library`,
+ * Vous avez une librairie de composants sur [npm](https://www.npmjs.com/) appelée `component-library`,
  * depuis laquelle vous exportez un composant appelé `MyComponent`. Pour les personnes
  * qui utilisent Svelte avec Typescript, vous voulez fournir du typage.
  * Vous créez donc un `index.d.ts` :
@@ -287,7 +287,7 @@ export function construct_svelte_component_dev(component, props) {
  * ```
  *
  * Typer ceci permet aux <span class='vo'>[IDEs](/docs/development#ide)</span> comme VS Code qui ont l'extension Svelte de fournir
- * de l'intellisense, et vous pouvez alors utiliser le composant de cette manière dans un
+ * de l'<span class='vo'>[Intellisense](/docs/development#intellisense)</span>, et vous pouvez alors utiliser le composant de cette manière dans un
  * fichier Svelte avec Typescript :
  *
  * ```svelte

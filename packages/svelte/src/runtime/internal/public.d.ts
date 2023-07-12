@@ -32,7 +32,7 @@ export type ComponentEvents<Component extends SvelteComponent> =
 	Component extends SvelteComponentDev<any, infer Events> ? Events : never;
 
 /**
- * Type utile pour obtenir les propriétés qu'un composant attend. Exemple :
+ * Type utile pour obtenir les <span class='vo'>[props](/docs/sveltejs#props)</span> qu'un composant attend. Exemple :
  * ```html
  * <script lang="ts">
  * 	import type { ComponentProps } from 'svelte';
