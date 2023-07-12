@@ -353,7 +353,7 @@ export class SvelteComponentDev extends SvelteComponent {
  * @template {Record<string, any>} [Props=any]
  * @template {Record<string, any>} [Events=any]
  * @template {Record<string, any>} [Slots=any]
- * @deprecated Utilisez plutôt `SvelteComponent`. Voir la PR plus d'information : https://github.com/sveltejs/svelte/pull/8512
+ * @deprecated Utilisez plutôt `SvelteComponent`. Voir la PR plus d'informations : https://github.com/sveltejs/svelte/pull/8512
  * @extends {SvelteComponentDev<Props, Events, Slots>}
  */
 export class SvelteComponentTyped extends SvelteComponentDev {}
