@@ -13,10 +13,11 @@ export type Updater<T> = (value: T) => T;
  * Lance et arrête les <span class="vo">[callbacks](/docs/development#callback)</span> d'abonnement.
  * Cette fonction est appelée quand le premier abonné s'abonne.
  *
- * @param {(value: T) => void} set Function that sets the value of the store.
- * @param {(value: Updater<T>) => void} update Function that sets the value of the store after passing the current value to the update function.
- * @returns {void | (() => void)} Optionally, a cleanup function that is called when the last remaining
- * subscriber unsubscribes.
+ * @param {(value: T) => void} set Fonction qui change la valeur du <span class="vo">[store](/docs/sveltejs#store)</span>.
+ *
+ * @param {(value: Updater<T>) => void} update Fonction qui change la valeur du <span class="vo">[store](/docs/sveltejs#store)</span>
+ * après avoir passé la valeur actuelle à la fonction de mise à jour.
+ * @returns {void | (() => void)} Une fonction de nettoyage optionnelle qui est appelée quand le dernier abonné se désabonne.
  */
 export type StartStopNotifier<T> = (
 	set: (value: T) => void,
@@ -37,13 +38,13 @@ export interface Readable<T> {
 export interface Writable<T> extends Readable<T> {
 	/**
 	 * Change la valeur et informe les abonnés.
-	 * @param value to set
+	 * @param value une valeur
 	 */
 	set(this: void, value: T): void;
 
 	/**
 	 * Met la valeur à jour en utilisant le <span class="vo">[callback](/docs/development#callback)</span> et informe les abonnés.
-	 * @param updater callback
+	 * @param updater <span class="vo">[callback](/docs/development#callback)</span>
 	 */
 	update(this: void, updater: Updater<T>): void;
 }
