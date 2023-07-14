@@ -104,7 +104,11 @@ Vous trouverez plus de détails sur les [getters](https://developer.mozilla.org/
 
 > Bientôt...
 
-## Race conditions
+## Race condition
+
+> Bientôt...
+
+## Readonly
 
 > Bientôt...
 
