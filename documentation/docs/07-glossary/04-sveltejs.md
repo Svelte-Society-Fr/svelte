@@ -39,7 +39,7 @@ De la même manière, il est possible de _binder_ des propriétés d'un composan
 
 Il est également possible de _binder_ des propriétés de certains éléments du DOM (les éléments de type bloc, les images, les vidéo, window via `svelte:window` et document via `svelte:document`).
 
-## Hooks
+## Hook
 
 > Bientôt...
 
