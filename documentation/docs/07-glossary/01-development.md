@@ -100,6 +100,10 @@ Vous trouverez plus de détails sur les [getters](https://developer.mozilla.org/
 
 > Bientôt...
 
+## Readonly
+
+> Bientôt...
+
 ## Runtime
 
 > Bientôt...
