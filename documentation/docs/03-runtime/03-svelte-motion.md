@@ -12,7 +12,7 @@ Les <span class="vo">[stores](/docs/sveltejs#store)</span> `tweened` mettent à 
 
 * `delay` (`number`, par défaut 0) - millisecondes avant le démarrage
 * `duration` (`number` | `function`, par défaut 400) - durée de la transition en millisecondes
-* `easing` (`function`, par défaut `t => t`) - une [fonction de lissage (`easing function`)](/docs#run-time-svelte-easing)
+* `easing` (`function`, par défaut `t => t`) - une [fonction de lissage (`easing function`)](/docs/svelte-easing)
 * `interpolate` (`function`) - voir ci-dessous
 
 `store.set` et `store.update` peuvent accepter un second argument `options` qui remplacera les options passées à l'instanciation.
