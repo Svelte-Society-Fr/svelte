@@ -28,6 +28,10 @@ Les transformations classiques effectuées lors d'un _bundling_ sont :
 
 > Vite et Rollup sont des exemples de _bundler_.
 
+## Client-side rendering
+
+>> Bientôt
+
 ## DOM
 
 > Bientôt...
@@ -48,7 +52,11 @@ Les transformations classiques effectuées lors d'un _bundling_ sont :
 
 > Bientôt...
 
-## Props
+## Metadata
+
+> Bientôt...
+
+## Preprocessing
 
 > Bientôt...
 
