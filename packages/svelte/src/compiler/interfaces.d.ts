@@ -186,26 +186,31 @@ export interface CompileOptions {
 	filename?: string;
 
 	/**
-	 * - `"dom"`: Svelte émet une classe JavaScript pour monter le composant dans le <span class="vo">[DOM](/docs/web#dom)</span>.
-	 * - `"ssr"`: Svelte émet un objet avec une méthode `render`, appropriée pour les rendus côté serveur.
-	 * - `false`: aucun JavaScript ni CSS n'est émis, seules les <span class="vo">[metadata](/docs/web#metadata)</span> sont retournées.
+	 * Si `"dom"`: Svelte émet une classe JavaScript pour monter le composant dans le <span class="vo">[DOM](/docs/web#dom)</span>.
+	 *
+	 * Si `"ssr"`: Svelte émet un objet avec une méthode `render`, appropriée pour les rendus côté serveur.
+	 *
+	 * Si `false`: aucun JavaScript ni CSS n'est émis, seules les <span class="vo">[metadata](/docs/web#metadata)</span> sont retournées.
 	 *
 	 * @default 'dom'
 	 */
 	generate?: 'dom' | 'ssr' | false;
 
 	/**
-	 * - `"throw"`: Svelte lève une exception lorsqu'il rencontre une erreur de compilation.
-	 * - `"warn"`: Svelte traitera les erreurs comme des <span class="vo">[warnings](/docs/development#warning)</span> et les ajoutera au rapport de <span class="vo">[warnings](/docs/development#warning)</span>.
+	 * Si `"throw"`: Svelte lève une exception lorsqu'il rencontre une erreur de compilation.
+	 *
+	 * Si `"warn"`: Svelte traitera les erreurs comme des <span class="vo">[warnings](/docs/development#warning)</span> et les ajoutera au rapport de <span class="vo">[warnings](/docs/development#warning)</span>.
 	 *
 	 * @default 'throw'
 	 */
 	errorMode?: 'throw' | 'warn';
 
 	/**
-	 * - `"strict"`: Svelte retourne un rapport de variables ne contenant que celles qui ne sont ni globales (_globals_) ni internes (_internals_).
-	 * - `"full"`: Svelte retourne un rapport de variables avec toutes les variables détectées.
-	 * - `false`: aucun rapport n'est retourné.
+	 * Si `"strict"`: Svelte retourne un rapport de variables ne contenant que celles qui ne sont ni globales (_globals_) ni internes (_internals_).
+	 *
+	 * Si `"full"`: Svelte retourne un rapport de variables avec toutes les variables détectées.
+	 *
+	 * Si `false`: aucun rapport n'est retourné.
 	 *
 	 * @default 'strict'
 	 */
