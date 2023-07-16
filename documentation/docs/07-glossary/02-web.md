@@ -24,6 +24,10 @@ Les transformations classiques effectuées lors d'un _bundling_ sont :
 
 > Vite et Rollup sont des exemples de _bundler_.
 
+## Client-side rendering
+
+>> Bientôt
+
 ## DOM
 
 Le _Document Object Model_ (DOM) est la représentation objet d'un document HTML chargé dans le navigateur web. Cette représentation du document permet de le voir comme un groupe structuré de nœuds et d'objets possédant différentes propriétés et méthodes. On parle souvent d'"arbre DOM".
@@ -43,6 +47,14 @@ Le DOM relie les pages web aux scripts, fichiers de styles, ressources externes 
 > Bientôt...
 
 ## Markup
+
+> Bientôt...
+
+## Metadata
+
+> Bientôt...
+
+## Preprocessing
 
 > Bientôt...
 
