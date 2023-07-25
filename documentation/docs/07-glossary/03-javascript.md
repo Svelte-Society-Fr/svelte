@@ -98,7 +98,7 @@ Plus d'infos sur les valeurs _truthy_ sur [le site de MDN](https://developer.moz
 
 ## Inline
 
-L'adjectif _inline_ désigne le fait de définir du style, une condition, une fonction ou un composant sur une seule ligne. Toutes ces fonctionnalités ne sont pas permises nativement en Javascript. Certaines sont apportés par les Framework de développement, comme Svelte.
+L'adjectif _inline_ désigne le fait de définir du style, une condition, une fonction ou un composant sur une seule ligne. Toutes ces fonctionnalités ne sont pas permises nativement en Javascript. Certaines sont apportées par les frameworks de développement, comme Svelte.
 
 Exemples :
 
@@ -115,7 +115,7 @@ function saluer(nom: string) {
 ```
 
 ```svelte
-<!-- style inline en html ou en Svelte -->
+<!-- style inline en HTML ou en Svelte -->
 <div style="margin: 8px;"/>
 
 <!-- autre manière d'écrire du style inline en Svelte -->

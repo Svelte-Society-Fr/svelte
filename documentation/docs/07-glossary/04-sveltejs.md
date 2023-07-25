@@ -10,7 +10,7 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 
 ## Binding
 
-Le _binding_ est le mécanisme par lequel une valeur d'un input est automatiquement copié dans une variable :
+Le _binding_ est le mécanisme par lequel une valeur d'un input est automatiquement copiée dans une variable :
 
 ```svelte
 <!-- ici, la valeur est initialisée avec la variable name 
