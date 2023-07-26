@@ -103,6 +103,7 @@ L'adjectif _inline_ désigne le fait de définir du style, une condition, une fo
 Exemples :
 
 ```ts
+// @noErrors
 // fonction inline
 const saluer = (nom: string) => console.log(`Salut ${nom} !`)
 

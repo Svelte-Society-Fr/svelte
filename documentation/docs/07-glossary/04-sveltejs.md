@@ -13,11 +13,11 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 Le _binding_ est le mécanisme par lequel une valeur d'un input est automatiquement copiée dans une variable :
 
 ```svelte
-<!-- ici, la valeur est initialisée avec la variable name 
+<!-- ici, la valeur est initialisée avec la variable name
 mais la variable ne sera pas mise à jour automatiquement avec la saisie de l'utilisateur -->
 <input value={name}>
 
-<!-- dans ce cas, la valeur est initialisée avec la variable name 
+<!-- dans ce cas, la valeur est initialisée avec la variable name
 et la variable sera automatiquement mise à jour avec la saisie de l'utilisateur -->
 <input bind:value={name}>
 
@@ -37,7 +37,7 @@ De la même manière, il est possible de _binder_ des propriétés d'un composan
 <Commande bind:articles={articles}>
 ```
 
-Il est également possible de _binder_ des propriétés de certains éléments du DOM (les éléments de type bloc, les images, les vidéo, window via `svelte:window` et document via `svelte:document`).
+Il est également possible de _binder_ des propriétés de certains éléments du <span class='vo'>[DOM](/docs/web#dom)</span> (les éléments de type bloc, les images, les vidéo, window via `svelte:window` et document via `svelte:document`).
 
 ## Hook
 

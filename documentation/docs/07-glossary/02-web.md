@@ -26,7 +26,7 @@ Les transformations classiques effectuées lors d'un _bundling_ sont :
 
 ## Client-side rendering
 
->> Bientôt
+> Bientôt
 
 ## DOM
 
@@ -68,7 +68,7 @@ Le DOM relie les pages web aux scripts, fichiers de styles, ressources externes 
 
 ## Server-side rendering
 
-Le rendu côté serveur, ou _server-side rendering_ (SSR) est l'action de générer une page web avec tout ou partie des données métier directement sur le serveur. Il est à mettre en opposition avec le rendu côté client, ou _client-side rendering_, où les pages viennent charger la logique dans un premier temps et les données métiers avec des requêtes supplémentaires, ce qui implique de construire une grande partie de la page dans le navigateur.
+Le rendu côté serveur, ou _server-side rendering_ (SSR) est l'action de générer une page web avec tout ou partie des données métier directement sur le serveur. Il est à mettre en opposition avec le <span class='vo'>[rendu côté client](#client-side-rendering)</span>, ou _client-side rendering_, où les pages viennent charger la logique dans un premier temps et les données métiers avec des requêtes supplémentaires, ce qui implique de construire une grande partie de la page dans le navigateur.
 
 Le SSR a pour avantages :
 
