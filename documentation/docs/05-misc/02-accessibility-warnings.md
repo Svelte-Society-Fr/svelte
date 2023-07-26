@@ -154,7 +154,7 @@ Il existe deux méthodes prises en charge pour associer une étiquette à un con
 
 Fournir des sous-titres pour les médias est essentiel afin que les utilisateurs sourds puissent suivre. Les sous-titres devraient être une transcription ou une traduction du dialogue, des effets sonores, des indications musicales pertinentes et d'autres informations audio pertinentes. Ce n'est pas seulement important pour l'accessibilité, mais peut également être utile pour tous les utilisateurs dans le cas où les médias ne sont pas disponibles (similaire au texte `alt` sur une image lorsqu'une image ne peut pas être chargée).
 
-Les sous-titres doivent contenir toutes les informations importantes et pertinentes pour comprendre les médias correspondants. Cela peut signifier que les sous-titres ne sont pas une correspondance 1:1 du dialogue dans le contenu média. Cependant, les sous-titres ne sont pas nécessaires pour les composants vidéo avec l'attribut `muet`.
+Les sous-titres doivent contenir toutes les informations importantes et pertinentes pour comprendre les médias correspondants. Cela peut signifier que les sous-titres ne sont pas une correspondance 1:1 du dialogue dans le contenu média. Cependant, les sous-titres ne sont pas nécessaires pour les composants vidéo avec l'attribut `muted`.
 
 ```svelte
 <video><track kind="captions" /></video>
@@ -255,7 +255,7 @@ Les rôles [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/#usage_intro) ne devrai
 <textarea role="listitem" />
 ```
 
-## `a11y-no-noninteractive-element-to-interactive-role`
+### `a11y-no-noninteractive-element-to-interactive-role`
 
 Un élément non interactif ne supporte pas les gestionnaires d'événements (souris et clavier). Les éléments non interactifs incluent : `<main>`, `<area>`, `<h1>` (,`<h2>`, etc), `<p>`, `<img>`, `<li>`, `<ul>` and `<ol>`. Les [rôles WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/#usage_intro) interactifs incluent `button`, `link`, `checkbox`, `menuitem`, `menuitemcheckbox`, `menuitemradio`, `option`, `radio`, `searchbox`, `switch` et `textbox`.
 
@@ -274,7 +274,7 @@ La navigation à l'aide de la touche Tab doit être limitée aux éléments de l
 <div tabindex="0" />
 ```
 
-## a11y-no-static-element-interactions
+## `a11y-no-static-element-interactions`
 
 Les éléments comme un `<div>` avec des gestionnaires d'événements comme `click` doivent avoir un rôle <span class="vo">[ARIA](/docs/web#aria)</span>.
 

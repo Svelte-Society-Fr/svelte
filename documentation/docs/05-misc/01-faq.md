@@ -10,7 +10,7 @@ Cinq à dix minutes devraient suffire pour démarrer. Une heure et demie devrait
 
 ## Où puis-je obtenir de l'aide ?
 
-Si votre question est en rapport avec une certaine syntaxe, la [page d'API](https://svelte.dev/docs) est un bon point de départ.
+Si votre question est en rapport avec une certaine syntaxe, la [page d'API](https://svelte-french.vercel.app/docs/introduction) est un bon point de départ.
 
 Stack Overflow est un forum populaire pour poser des questions liées à du code ou si vous bloquez sur une erreur spécifique. Lisez les questions existantes étiquetées avec [Svelte](https://stackoverflow.com/questions/tagged/svelte+or+svelte-3) ou [posez la votre](https://stackoverflow.com/questions/ask?tags=svelte) !
 
@@ -26,11 +26,11 @@ Il existe une [extension VS Code officielle pour Svelte](https://marketplace.vis
 
 ## Existe-t-il un outil pour formater automatiquement mes fichiers .svelte ?
 
-Vous pouvez utiliser prettier avec le <span class="vo">[plugin](/docs/development#plugin)</span> [plugin-prettier-svelte](https://www.npmjs.com/package/prettier-plugin-svelte).
+Vous pouvez utiliser Prettier avec le <span class="vo">[plugin](/docs/development#plugin)</span> [plugin-prettier-svelte](https://www.npmjs.com/package/prettier-plugin-svelte).
 
 ## Comment documenter mes composants ?
 
-Dans les éditeurs qui utilisent le Langage Serveur Svelte (*Svelte Language Server*) vous pouvez documenter les composants, fonctions et exports à l'aide de commentaires spécialement formatés.
+Dans les éditeurs qui utilisent le <span class="vo">[Svelte Language Server](/docs/sveltejs#svelte-language-server)</span> vous pouvez documenter les composants, fonctions et exports à l'aide de commentaires spécialement formatés.
 
 ```svelte
 <script>
@@ -43,7 +43,7 @@ Dans les éditeurs qui utilisent le Langage Serveur Svelte (*Svelte Language Ser
 Voici une documentation pour ce composant.
 Elle apparaîtra au survol
 
-- Vous pouvez utiliser markdown ici.
+- Vous pouvez utiliser la syntaxe Markdown ici.
 - Vous pouvez également utiliser des blocs de code ici.
 - Utilisation:
   ```tsx
@@ -66,6 +66,7 @@ Vous devez installer un pré-processeur tel que [svelte-preprocess](https://gith
 Pour déclarer le type d'une variable réactive dans un template Svelte, vous devez utiliser la syntaxe suivante :
 
 ```ts
+// @noErrors
 let x: number;
 $: x = compteur + 1;
 ```
@@ -73,6 +74,7 @@ $: x = compteur + 1;
 Pour importer un type ou une interface, assurez-vous d'utiliser [le modificateur `type` de TypeScript](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html#type-only-imports-and-export):
 
 ```ts
+// @noErrors
 import type { UneInterface } from "./UnFichier";
 ```
 
@@ -109,13 +111,13 @@ Quelques ressources pour démarrer avec les tests unitaires :
 
 ## Un routeur est-il intégré ?
 
-La bibliothèque officielle de <span class="vo">[routing](/docs/web#route)</span> est [SvelteKit](https://kit.svelte.dev/). Sveltekit fournit un routeur basé sur le système de fichier, un rendu coté serveur (SSR) et un rechargement automatique de module (HMR) en une seule librairie facile à utiliser. Il est similaire à Next.js pour React.
+La bibliothèque officielle de <span class="vo">[routing](/docs/web#routing)</span> est [SvelteKit](https://kit.svelte.dev/). Sveltekit fournit un routeur basé sur le système de fichier, un <span class="vo">[rendu coté serveur (SSR)](/docs/web#server-side-rendering)</span> et un <span class="vo">[rechargement automatique de module (HMR)](/docs/web#hot-module-reloading)</span> en une seule librairie facile à utiliser. Il est similaire à Next.js pour React.
 
-Toutefois, vous pouvez utiliser n'importe quelle bibliothèque de routage de votre choix. Beaucoup de gens utilisent [page.js](https://github.com/visionmedia/page.js). Il y a aussi [navaid](https://github.com/lukeed/navaid), qui est très similaire. Et [universal-router](https://github.com/kriasoft/universal-router), qui est isomorphe avec les routes enfants, mais sans prise en charge intégrée de l'historique.
+Toutefois, vous pouvez utiliser n'importe quelle bibliothèque de <span class='vo'>[routing](/docs/web#routing)</span> de votre choix. Beaucoup de gens utilisent [page.js](https://github.com/visionmedia/page.js). Il y a aussi [navaid](https://github.com/lukeed/navaid), qui est très similaire. Et [universal-router](https://github.com/kriasoft/universal-router), qui est isomorphe avec les routes enfants, mais sans prise en charge intégrée de l'historique.
 
 Si vous préférez une approche HTML déclarative, il existe la bibliothèque isomorphe [svelte-routing](https://github.com/EmilTholin/svelte-routing) et un fork appelé [svelte-navigator](https://github. com/mefechoel/svelte-navigator) contenant des fonctionnalités supplémentaires.
 
-Si vous avez besoin d'un routage basé sur le hachage côté client, consultez [svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router) ou [abstract-state-router](https://github.com/TehShrike/abstract-state-router/).
+Si vous avez besoin d'un <span class='vo'>[routing](/docs/web#routing)</span> basé sur le <span class="vo">[hashing](/docs/development#hash)</span> côté client, consultez [svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router) ou [abstract-state-router](https://github.com/TehShrike/abstract-state-router/).
 
 [Routify](https://routify.dev) est un autre routeur basé sur l'arborescence de fichiers, similaire au routeur de SvelteKit. La version 3 supporte le rendu côté serveur natif de Svelte.
 
@@ -129,4 +131,4 @@ La documentation est toujours disponible [ici](https://v2.svelte.dev/guide).
 
 ## Comment puis-je recharger un module automatiquement ?
 
-Nous vous recommandons d'utiliser [SvelteKit](https://kit.svelte.dev/), qui prend en charge le rechargement automatique (HMR) prêt à l'emploi et est construit avec [Vite](https://vitejs.dev/) et [svelte-hmr](https://github.com/sveltejs/svelte-hmr). Il existe également des <span class="vo">[plugins](/docs/development#plugin)</span> communautaires pour [rollup](https://github.com/rixo/rollup-plugin-svelte-hot) et [webpack](https://github.com/sveltejs/svelte-loader).
+Nous vous recommandons d'utiliser [SvelteKit](https://kit.svelte.dev/), qui prend en charge le <span class="vo">[HMR](/docs/web#hot-module-reloading)</span> prêt à l'emploi et est construit avec [Vite](https://vitejs.dev/) et [svelte-hmr](https://github.com/sveltejs/svelte-hmr). Il existe également des <span class="vo">[plugins](/docs/development#plugin)</span> communautaires pour [rollup](https://github.com/rixo/rollup-plugin-svelte-hot) et [webpack](https://github.com/sveltejs/svelte-loader).

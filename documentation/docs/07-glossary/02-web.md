@@ -42,6 +42,10 @@ Le DOM relie les pages web aux scripts, fichiers de styles, ressources externes 
 
 > Bientôt...
 
+## Hot Module Reloading
+
+> Bientôt...
+
 ## Keyframe
 
 > Bientôt...

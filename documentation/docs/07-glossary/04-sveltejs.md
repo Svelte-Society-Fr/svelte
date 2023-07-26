@@ -56,3 +56,7 @@ Il est également possible de _binder_ des propriétés de certains éléments d
 Un _store_ est un concept au sein de Svelte qui permet de stocker une valeur, et de notifier n'importe quel module au sein de l'application de ses changements de valeur.
 
 Plus d'infos sur [les stores Svelte dans la documentation](/docs/svelte-store).
+
+## Svelte Language Server
+
+> Bientôt...

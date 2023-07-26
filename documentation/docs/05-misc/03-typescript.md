@@ -61,7 +61,7 @@ Pour utiliser TypeScript dans vos composants Svelte, ajoutez `lang="ts"` au tag 
 
 ### Props
 
-Les <span class="vo">[props](/docs/web#props)</span> peuvent directement être typées sur l'instruction `export let` :
+Les <span class="vo">[props](/docs/sveltejs#props)</span> peuvent directement être typées sur l'instruction `export let` :
 
 ```svelte
 <script lang="ts">
@@ -71,7 +71,7 @@ Les <span class="vo">[props](/docs/web#props)</span> peuvent directement être t
 
 ### Slots
 
-Les <span class="vo">[slots](/docs/sveltejs#slot)</span> et les types de leurs <span class="vo">[props](/docs/web#props)</span> sont déduits des types des props qui leurs sont passées :
+Les <span class="vo">[slots](/docs/sveltejs#slot)</span> et les types de leurs <span class="vo">[props](/docs/sveltejs#props)</span> sont déduits des types des props qui leurs sont passées :
 
 ```svelte
 <script lang="ts">
@@ -117,7 +117,7 @@ Les événements peuvent être typés avec `createEventDispatcher` :
 
 ## Surcharge des types de DOM natifs
 
-Svelte fournit des types aussi proche que possible pour chaque élément HTML du <span class="vo">[DOM](/docs/web#dom)</span> qui existe. Parfois, vous voudrez utiliser des attributs expérimentaux ou des événements personnalisés. Dans ces cas, TypeScript lèvera une erreur de type, en indiquant qu'il ne connaît pas ces types. S'il s'agit d'un attribut ou événement standard et non expérimental, il se peut tout à fait que ce soit un type manquant dans [le typage HTML de Svelte](https://github.com/sveltejs/svelte/blob/master/elements/index.d.ts). Dans ce cas, vous êtes le bienvenue pour ouvrir une <span class="vo">[issue](/docs/development#issue)</span> ou une <span class="vo">[PR](/docs/development#pr)</span> pour le corriger.
+Svelte fournit des types aussi proche que possible pour chaque élément HTML du <span class="vo">[DOM](/docs/web#dom)</span> qui existe. Parfois, vous voudrez utiliser des attributs expérimentaux ou des événements personnalisés. Dans ces cas, TypeScript lèvera une erreur de type, en indiquant qu'il ne connaît pas ces types. S'il s'agit d'un attribut ou événement standard et non expérimental, il se peut tout à fait que ce soit un type manquant dans [le typage HTML de Svelte](https://github.com/sveltejs/svelte/blob/master/elements/index.d.ts). Dans ce cas, vous êtes invité•e à ouvrir une <span class="vo">[issue](/docs/development#issue)</span> ou une <span class="vo">[PR](/docs/development#pull-request)</span> pour le corriger.
 
 S'il s'agit d'un attribut ou d'un événement expérimental ou personnalisé, vous pouvez étendre le typage comme suit :
 
@@ -176,7 +176,7 @@ Vous ne pouvez pas typer les déclarations réactives avec TypeScript de la mani
 </script>
 ```
 
-Vous ne pouvez pas utiliser `: TYPE` car cela résulte en une syntaxe invalide. A la place, vous pouvez déplacer le typage sur une instruction `let` juste au dessus :
+Vous ne pouvez pas utiliser `: TYPE` car cela résulte en une syntaxe invalide. À la place, vous pouvez déplacer le typage sur une instruction `let` juste au dessus :
 
 ```svelte
 <script lang="ts">
