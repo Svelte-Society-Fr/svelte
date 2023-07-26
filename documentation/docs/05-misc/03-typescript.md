@@ -158,7 +158,7 @@ declare module 'svelte/elements' {
 }
 ```
 
-## Experimental advanced typings
+## Types avancés expérimentaux
 
 Quelques fonctionnalités sont manquantes pour bénéficier de tous les avantages de TypeScript dans des cas plus avancés, comme pour typer qu'un composant étend une interface, pour typer les <span class="vo">[slots](/docs/sveltejs#slot)</span> ou pour utiliser des génériques. Tout ceci est rendu possible en utilisant des fonctionnalités expérimentales avancées. Voir [la RFC](https://github.com/dummdidumm/rfcs/blob/ts-typedefs-within-svelte-components/text/ts-typing-props-slots-events.md) pour savoir comment définir de tels typages.
 
