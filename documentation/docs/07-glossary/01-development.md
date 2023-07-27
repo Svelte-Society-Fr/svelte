@@ -10,15 +10,15 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 
 ## API
 
-Une API est une interface de programmation d'application. Il s'agit d'un ensemble de _points d'accès_ publics ou privés basés sur le protocol HTTP et qui répondent des données, généralement exprimé en JSON.
+Une API est une interface de programmation d'application. Il s'agit d'un ensemble de **points d'accès** publics ou privés basés sur le protocol HTTP et qui répondent des données, généralement exprimé en JSON.
 
-Une API peut suivre une architecture logicielle particulière. Les plus connus sont le REST (representational state transfer) ou le GraphQL (Graph Query Language).
+Une API peut suivre une architecture logicielle particulière. Les plus connues sont le REST (_Representational State Transfer_) ou le GraphQL (_Graph Query Language_).
 
-Dans le cadre de SvelteKit, il est possible de [définir une API publique](/docs/routing#server) en définissant un fichier `+server.js` dans le dossier routes.
+Dans le cadre de SvelteKit, il est possible de [définir une API publique](/docs/routing#server) en définissant un fichier `+server.js` dans le dossier `routes`.
 
 ## AST
 
-Un arbre de la syntaxe abstraite (abstract syntax tree - _AST_) est un format de représentation de certains données sous forme d'arbre dont les nœuds internes et les feuilles (ou nœuds externes) possèdent des caractéristiques particulières.
+Un arbre de la syntaxe abstraite (_Abstract Syntax Tree_ ou _AST_) est un format de représentation de certains données sous forme d'arbre dont les nœuds internes et les feuilles (ou nœuds externes) possèdent des caractéristiques particulières.
 
 Svelte utilise le format _AST_ comme intermédiaire entre un composant Svelte et le code JavaScript natif interprété par le navigateur web.
 
@@ -84,13 +84,13 @@ Vous trouverez plus de détails sur les [getters](https://developer.mozilla.org/
 
 ## Hash
 
-Un _hash_ et le résultat d'une fonction de hachage. Une fonction de hachage est une fonction qui associe des valeurs de taille fixe à des données de taille arbitraire. Les _hash_ ont la particularité d'être statistiquement uniques, leur permettant d'être utilisés dans des applications d'indexation (pour une donnée, un hash unique est calculé et est stockée dans une table d'indexation).
+Un _hash_ est le résultat d'une fonction de hachage (ou _hashing_). Une fonction de hachage est une fonction qui associe des valeurs de taille fixe à des données de taille arbitraire. Les _hash_ ont la particularité d'être statistiquement uniques, leur permettant d'être utilisés dans des applications d'indexation (pour une donnée, un hash unique est calculé et est stockée dans une table d'indexation).
 
-Dans le cadre de Svelte, les _hash_ sont utilisés pour générer les noms de classes css.
+Dans le cadre de Svelte, les _hash_ sont utilisés pour générer les noms de classes CSS.
 
 ## IDE
 
-Un environnement de développement intégré est un logiciel intégrant plusieurs outils facilitant le développement informatique. Parmi les plus célèbres dans le monde web: VSCode et WebStorm.
+Un environnement de développement intégré (_Integrated Development Environment) est un logiciel intégrant plusieurs outils facilitant le développement informatique. Parmi les plus célèbres dans le monde web: VSCode et WebStorm.
 
 ## Intellisense
 
