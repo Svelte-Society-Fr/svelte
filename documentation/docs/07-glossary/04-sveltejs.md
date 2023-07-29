@@ -57,9 +57,11 @@ Elles sont passées au composant de la même manière qu'un attribut HTML :
 
 Plus d'infos sur les [props dans la documentation](/docs/basic-markup#attributs-et-props).
 
+> Le concept de props est exactement le même en Svelte qu'en React, Vue ou Solid.
+
 ## Slot
 
-Le _slot_ correspond au contenu enfant d'un composant. Il est possible d'y accéder dans le markup via `<slot>` ou dans le bloc `script` via la variable globale `$$slots`. 
+Un _slot_ correspond au contenu enfant d'un composant. Il est possible d'y accéder dans le markup via `<slot>` ou dans le bloc `script` via la variable globale `$$slots`. 
 
 Plus d'infos sur [les slots dans la documentation](/docs/special-elements#slot).
 
@@ -71,7 +73,7 @@ Plus d'infos sur [les stores Svelte dans la documentation](/docs/svelte-store).
 
 ## Tick
 
-De manière général, un _tick_ peut faire référence à une période de temps unitaire. 
+De manière générale, un _tick_ peut faire référence à une période de temps unitaire. 
 
 Dans le cadre de Svelte, la méthode _tick_ définit est une promesse qui se résout une fois que tous les changements d'état en attente ont été appliqués, ou dans la micro-tâche suivante s'il n'y en a pas.
 

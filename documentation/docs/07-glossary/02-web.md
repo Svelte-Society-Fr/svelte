@@ -52,9 +52,9 @@ Le DOM relie les pages web aux scripts, fichiers de styles, ressources externes 
 
 ## Language Server
 
-Un _language server_ est un algorithme exécuté par un <span class="vo">[IDE](/docs/development#ide)</span>. Il permet d’exécuter les aides au développement (autocomplétion, accès rapide, liste des utilisations, etc.) adaptées à un langage de programmation. L'interface entre l'IDE et le _language server_ est défini par un protocol, le _Language Server Protocol_ (LSP).
+Un _language server_ est un algorithme exécuté par un <span class="vo">[IDE](/docs/development#ide)</span>. Il permet d’exécuter les aides au développement (autocomplétion, accès rapide, liste des utilisations, etc.) adaptées à un langage de programmation. L'interface entre l'IDE et le _language server_ est défini par un protocole, le _Language Server Protocol_ (LSP).
 
-Plus d'infos sur le [site de la documentation du language server protocol](https://microsoft.github.io/language-server-protocol/). 
+Plus d'infos sur le [site de la documentation du LSP](https://microsoft.github.io/language-server-protocol/). 
 
 ## Lazy loading
 

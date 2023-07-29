@@ -149,10 +149,10 @@ Pour en savoir plus sur la différence entre `null` et `undefined`, vous pouvez 
 
 Un _polyfill_ est un bout de code (généralement en JavaScript sur le web) utilisé pour fournir des fonctionnalités récentes sur d'anciens navigateurs qui ne les supportent pas nativement.
 
-Plus d'infos sur les [polyfill sur le site MDN](https://developer.mozilla.org/fr/docs/Glossary/Polyfill).
+Plus d'infos sur les [polyfills sur le site MDN](https://developer.mozilla.org/fr/docs/Glossary/Polyfill).
 
 ## Shadow DOM
 
-Un _shadow DOM_ (ou DOM fantôme) est un <span class='vo'>[DOM](/docs/web#dom)</span> dans le DOM. Il est monté via la méthode `element.attachShadow()` et a pour particularité d'être encapsulé, c'est à dire que sa structure de balisage est isolé, que son style est isolé et que son comportement est caché et séparé du reste de code de la page.
+Un _shadow DOM_ (ou DOM fantôme) est un <span class='vo'>[DOM](/docs/web#dom)</span> dans le DOM. Il est monté via la méthode `element.attachShadow()` et a pour particularité d'être encapsulé, c'est-à-dire que sa structure de balisage est isolée, que son style est isolé et que son comportement est caché et séparé du reste de code de la page.
 
 Plus d'infos sur le [shadow DOM sur le site MDN](https://developer.mozilla.org/fr/docs/Web/API/Web_components/Using_shadow_DOM).
