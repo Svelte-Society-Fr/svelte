@@ -14,7 +14,7 @@ Une API est une interface de programmation d'application. Il s'agit d'un ensembl
 
 Une API peut suivre une architecture logicielle particulière. Les plus connues sont le REST (_Representational State Transfer_) ou le GraphQL (_Graph Query Language_).
 
-Dans le cadre de SvelteKit, il est possible de [définir une API publique](/docs/routing#server) en définissant un fichier `+server.js` dans le dossier `routes`.
+Dans le cadre de SvelteKit, il est possible de [définir une API publique](https://kit.svelte.dev/docs/routing#server) en définissant un fichier `+server.js` dans le dossier `routes`.
 
 ## AST
 
