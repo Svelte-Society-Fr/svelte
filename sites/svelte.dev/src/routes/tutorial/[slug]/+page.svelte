@@ -132,7 +132,7 @@
 				</div>
 
 				<div class="improve-chapter">
-					<a class="no-underline" href={improve_link}>Editer ce chapitre</a>
+					<a class="no-underline" href={improve_link}>Éditer ce chapitre</a>
 				</div>
 			</div>
 		</div>
