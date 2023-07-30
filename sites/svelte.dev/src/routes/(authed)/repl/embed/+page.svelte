@@ -10,7 +10,7 @@
 
 	<meta name="twitter:title" content="REPL • Svelte" />
 	<meta name="twitter:description" content="Applications web cybernétiquement améliorées" />
-	<meta name="Description" content="Bas à sable Svelte interactif" />
+	<meta name="Description" content="Bac à sable Svelte interactif" />
 </svelte:head>
 
 <div class="repl-outer">
