@@ -33,7 +33,7 @@
 	<title>{data.example?.title} {data.example?.title ? '•' : ''} Svelte Examples</title>
 
 	<meta name="twitter:title" content="Exemples Svelte" />
-	<meta name="twitter:description" content="Applications web cybernétiquement améliorées" />
+	<meta name="twitter:description" content="Cybernetically enhanced web apps" />
 	<meta name="Description" content="Exemples Svelte interactifs" />
 </svelte:head>
 
