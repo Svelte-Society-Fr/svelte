@@ -1,9 +1,7 @@
 <script>
-	import { Blurb, Footer } from '@sveltejs/site-kit/home';
-	// import { Blurb, TrySection } from '@sveltejs/site-kit/home';
+	import { Blurb, Footer, TrySection } from '@sveltejs/site-kit/home';
 	import Demo from './_components/Demo.svelte';
 	import Hero from './_components/Hero.svelte';
-	import TrySection from './_components/Try.svelte';
 	import Supporters from './_components/Supporters/index.svelte';
 	import WhosUsingSvelte from './_components/WhosUsingSvelte/index.svelte';
 </script>
