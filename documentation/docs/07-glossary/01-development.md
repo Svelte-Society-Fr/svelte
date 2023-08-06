@@ -102,7 +102,7 @@ Le terme _intelliSense_ fait référence à des aides à la saisie semi-automati
 
 ## Issue
 
-Une _issue_ (qui signifie "problème" en anglais) est une entité servant à attirer l'attention des personnes responsables d'un logiciel pour que celles-ci résolvent un bug ou développent une fonctionnalité. Cette terminologie est très utilisée entre autres sur les sites [Github](https://github.com), [Gitlab](https://gitlab.com) et [Bitbucket](https://bitbucket.org).
+Une _issue_ (qui signifie "problème" en anglais) est une note sur un dépôt à propos de quelque chose qui nécessite une attention particulière. Il peut s'agir d'un bogue, d'une demande de fonctionnalité, d'une question ou de bien d'autres choses. Cette terminologie est très utilisée entre autres sur les sites [Github](https://github.com), [Gitlab](https://gitlab.com) et [Bitbucket](https://bitbucket.org).
 
 On parle parfois en français de "ticket".
 
