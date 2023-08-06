@@ -205,4 +205,4 @@ nouveauBonjour("Jean") // "Bonjour Jean! Comment vas-tu?"
 
 On dit d'une entité qu'elle est _writable_ lorsqu'on peut pas changer sa valeur une fois que celle-ci a été définie. Le terme _writable_ est à mettre en opposition avec <span class="vo">[readonly](/docs/development#readonly)</span>.
 
-Dans le cadre de Svelte, _writable_ fait souvent référence à un <span class="vo">[store](SVELTE_SITE_URL/docs/sveltejs#store)</span> _writable_, dont la valeur peut être mise à jour.
+Dans le cadre de Svelte, _writable_ fait souvent référence à un <span class="vo">[store](/docs/sveltejs#store)</span> _writable_, dont la valeur peut être mise à jour.
