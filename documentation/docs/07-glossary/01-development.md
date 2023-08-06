@@ -143,7 +143,7 @@ Cette terminologie est très utilisée entre autres sur les sites [Github](https
 
 ## Readonly
 
-On dit d'une entité qu'elle est _readonly_ lorsqu'on ne peut pas changer sa valeur une fois que celle-ci a été définie. On parle aussi de "lecture seule" en français.
+On dit d'une entité qu'elle est _read-only_ lorsqu'on ne peut pas changer sa valeur une fois que celle-ci a été définie. On parle aussi de "lecture seule" en français.
 
 Ce terme est à mettre en opposition avec <span class="vo">[writable](/docs/development#writable)</span>.
 
@@ -205,4 +205,4 @@ nouveauBonjour("Jean") // "Bonjour Jean! Comment vas-tu?"
 
 On dit d'une entité qu'elle est _writable_ lorsqu'on peut pas changer sa valeur une fois que celle-ci a été définie.
 
-Ce terme est à mettre en opposition avec <span class="vo">[readonly](/docs/development#read-only)</span>.
+Ce terme est à mettre en opposition avec <span class="vo">[readonly](/docs/development#readonly)</span>.
