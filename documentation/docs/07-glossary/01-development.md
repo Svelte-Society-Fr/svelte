@@ -49,7 +49,7 @@ chargeLaDonnée(afficheCoucou);
 
 ## CLI
 
-> Bientôt...
+_CLI_ est l'acronyme de _Command Line Interface_. Il s'agit des différentes commandes fournies par un logiciel ou une librairie pour être utilisées dans le terminal.
 
 ## End to end
 
@@ -102,11 +102,13 @@ Le terme _intelliSense_ fait référence à des aides à la saisie semi-automati
 
 ## Issue
 
-> Bientôt...
+Une _issue_ (qui signifie "problème" en anglais) est une entité servant à attirer l'attention des personnes responsables d'un logiciel pour que celles-ci résolvent un bug ou développent une fonctionnalité. Cette terminologie est très utilisée entre autres sur les sites [Github](https://github.com), [Gitlab](https://gitlab.com) et [Bitbucket](https://bitbucket.org).
+
+On parle parfois en français de "ticket".
 
 ## Log
 
-> Bientôt...
+Un _log_ est l'affichage d'une information lors de l'exécution d'un programme. Ils peuvent être affichées en direct, ou bien stockées dans un fichier de logs.
 
 ## Namespace
 
@@ -130,7 +132,10 @@ Le terme _intelliSense_ fait référence à des aides à la saisie semi-automati
 
 ## Pull Request
 
-> Bientôt...
+Une _Pull Request_ est une demande d'intégration de nouveau code dans le code existant d'un logiciel. Ce terme est en général utilisé lorsque le logiciel est versionné avec Git.
+
+Cette terminologie est très utilisée entre autres sur les sites [Github](https://github.com) et [Bitbucket](https://bitbucket.org). Sur [Gitlab](https://gitlab.com), on parle de _Merge Request_, qui est synonyme.
+
 
 ## Race condition
 
@@ -138,7 +143,9 @@ Le terme _intelliSense_ fait référence à des aides à la saisie semi-automati
 
 ## Readonly
 
-> Bientôt...
+On dit d'une entité qu'elle est _readonly_ lorsqu'on ne peut pas changer sa valeur une fois que celle-ci a été définie. On parle aussi de "lecture seule" en français.
+
+Ce terme est à mettre en opposition avec <span class="vo">[writable](/docs/development#writable)</span>.
 
 ## Runtime
 
@@ -166,7 +173,7 @@ Le terme _intelliSense_ fait référence à des aides à la saisie semi-automati
 
 ## Warning
 
-> Bientôt...
+Un _warning_ est un avertissement, moins grave qu'une erreur, mais suffisamment important pour qu'il soit porté à l'attention des personnes concernées.
 
 ## Wrapper
 
@@ -196,4 +203,6 @@ nouveauBonjour("Jean") // "Bonjour Jean! Comment vas-tu?"
 
 ## Writable
 
-> Bientôt...
+On dit d'une entité qu'elle est _writable_ lorsqu'on peut pas changer sa valeur une fois que celle-ci a été définie.
+
+Ce terme est à mettre en opposition avec <span class="vo">[readonly](/docs/development#read-only)</span>.
