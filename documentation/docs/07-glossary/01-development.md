@@ -22,6 +22,14 @@ Un arbre de la syntaxe abstraite (_Abstract Syntax Tree_ ou _AST_) est un format
 
 Svelte utilise le format _AST_ comme intermédiaire entre un composant Svelte et le code JavaScript natif interprété par le navigateur web.
 
+## Bug
+
+Vous le savez très certainement, un _bug_ (["insecte"](https://fr.wikipedia.org/wiki/Bug_(informatique)#/media/Fichier:First_Computer_Bug,_1945.jpg) en anglais) est une erreur ou un problème qui empêche le bon fonctionnement d'un logiciel.
+
+Il est courant d'utiliser un _debugger_ ou "débuggueur" pour aider à la résolution de ces _bugs_.
+
+Le mot francisé est "bogue", mais il semble que personne ne s'en serve.
+
 ## Build
 
 Un _build_ est l'ensemble de fichiers produits par le <span class="vo">[bundler](/docs/web#bundler-packager)</span>. C'est le plus souvent ce qui sera utilisé pour déployer l'application en production.
@@ -50,6 +58,10 @@ chargeLaDonnée(afficheCoucou);
 ## CLI
 
 > Bientôt...
+
+## Debugger
+
+Un _debugger_ est un outil logiciel aidant à la résolution de <span class="vo">[bugs](#bug)</span>.
 
 ## End to end
 
