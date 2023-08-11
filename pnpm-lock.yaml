@@ -181,8 +181,8 @@ importers:
         specifier: ^1.22.4
         version: 1.22.4(svelte@packages+svelte)(vite@4.4.8)
       '@sveltejs/site-kit':
-        specifier: 6.0.0-next.31
-        version: 6.0.0-next.31(@sveltejs/kit@1.22.4)(svelte@packages+svelte)
+        specifier: 6.0.0-next.30
+        version: 6.0.0-next.30(@sveltejs/kit@1.22.4)(svelte@packages+svelte)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^2.4.3
         version: 2.4.3(svelte@packages+svelte)(vite@4.4.8)
@@ -2052,8 +2052,8 @@ packages:
       svelte-local-storage-store: 0.4.0(svelte@packages+svelte)
     dev: false
 
-  /@sveltejs/site-kit@6.0.0-next.31(@sveltejs/kit@1.22.4)(svelte@packages+svelte):
-    resolution: {integrity: sha512-8IvvOitnhi3f+DAUvTONSoAtAGvvMnC/FVv9ilZXgBFDUOdOunlw1lDCVTWmL0Bnk/aFdxovPBOBhV0zsx09gg==}
+  /@sveltejs/site-kit@6.0.0-next.30(@sveltejs/kit@1.22.4)(svelte@packages+svelte):
+    resolution: {integrity: sha512-6cArDGabfjPbG40l45Y+TX4/Y0QkP+L2ek6m4fJ1bJ9CbvUiTwIvlAQlOz3TpN0/WZZf/dL76nn5n5waAHpZDQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.20.0
       svelte: ^4.0.0
