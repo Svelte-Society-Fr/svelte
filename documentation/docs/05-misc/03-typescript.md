@@ -140,7 +140,7 @@ declare namespace svelteHTML {
 
 Ensuite, assurez vous que les fichiers `d.ts` soient référencés dans `tsconfig.json`. Si vous lisez quelque chose comme : `"include": ["src/**/*"]` et vos fichiers `d.ts` sont dans votre dossier `src`, ça devrait marcher. Vous devrez peut-être relancer votre serveur pour que le changement prenne effet.
 
-Since Svelte version 4.2 / `svelte-check` version 3.5 / VS Code extension version 107.10.0 you can also declare the typings by augmenting the `svelte/elements` module like this:
+Depuis Svelte version 4.2 / `svelte-check` version 3.5 / l'extension VS Code version 107.10.0, vous pouvez aussi déclarer les types en augmentant le module `svelte/elements` comme ceci :
 
 ```ts
 /// file: additional-svelte-typings.d.ts
@@ -151,7 +151,7 @@ declare module 'svelte/elements' {
         'custom-button': HTMLButtonAttributes;
     }
 
-	// allows for more granular control over what element to add the typings to
+	// permet une granularité plus fine sur l'élément auquel on souhaite rajouter des types
     export interface HTMLButtonAttributes {
         'veryexperimentalattribute'?: string;
     }
