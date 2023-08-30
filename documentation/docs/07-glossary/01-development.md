@@ -142,19 +142,19 @@ Un _log_ est l'affichage d'une information lors de l'exécution d'un programme. 
 
 ## Number
 
-> Bientôt...
+_Number_ est le mot anglais pour "nombre". En développement informatique, il s'agit la plupart du temps d'un type de variable représentant des nombres.
 
 ## Parser
 
-> Bientôt...
+_Parser_ est un verbe représentant l'action de transformer une donnée reçue dans un format adapté à son traitement. Un cas classique dans une application web est de _parser_ une chaîne de caractères représentant un <span class="vo">[JSON](/docs/web#json)</span>, reçu en réponse d'un appel HTTP, en un objet JavaScript, plus simple à manipuler. Dans d'autres contextes, il est est également possible de _parser_ du binaire en chaîne de caractères.
 
 ## Payload
 
-> Bientôt...
+Une _payload_ représente la donnée utile transportée dans une communication.
 
 ## Plugin
 
-> Bientôt...
+Un _plugin_ est une librairie utilitaire que l'on peut ajouter à un programme (navigateur web, <span class="vo">[IDE](/docs/development#ide)</span>, etc.) pour l'améliorer.
 
 ## Pull Request
 
@@ -182,7 +182,7 @@ Ce terme est à mettre en opposition avec <span class="vo">[writable](#writable)
 
 ## Slash
 
-> Bientôt...
+Un _slash_ est simplement le caractère `/`, à ne pas confondre avec son frère jumeau _antislash_ `\`.
 
 ## Stack trace
 
@@ -190,7 +190,7 @@ Ce terme est à mettre en opposition avec <span class="vo">[writable](#writable)
 
 ## String
 
-> Bientôt...
+_String_ est le mot anglais pour "chaîne de caractères". En développement informatique, il s'agit la plupart du temps d'un type de variable représentant du texte.
 
 ## Thread
 
@@ -202,7 +202,7 @@ Ce terme est à mettre en opposition avec <span class="vo">[writable](#writable)
 
 ## Tooltip
 
-> Bientôt...
+Un _tooltip_ est une info-bulle, c'est-à-dire un message qui peut s'afficher à l'écran dans certaines circonstances (souvent au survol du curseur) pour fournir des informations contextuelles.
 
 ## Warning
 
