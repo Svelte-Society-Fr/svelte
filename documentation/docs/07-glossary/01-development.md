@@ -150,7 +150,7 @@ _Parser_ est un verbe représentant l'action de transformer une donnée reçue d
 
 ## Payload
 
-Une _payload_ représente la donnée utile tranportée dans une communication.
+Une _payload_ représente la donnée utile transportée dans une communication.
 
 ## Plugin
 
