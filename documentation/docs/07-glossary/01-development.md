@@ -202,7 +202,7 @@ _String_ est le mot anglais pour "chaîne de caractères". En développement inf
 
 ## Tooltip
 
-Un _tooltip_ est une info-bulle, c'est-à-dire un message qui peut s'afficher à l'écran dans certaines circonstances pour fournir des informations contextuelles.
+Un _tooltip_ est une info-bulle, c'est-à-dire un message qui peut s'afficher à l'écran dans certaines circonstances (souvent au survol du curseur) pour fournir des informations contextuelles.
 
 ## Warning
 
