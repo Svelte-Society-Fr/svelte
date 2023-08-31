@@ -134,7 +134,7 @@ SvelteKit propose le SSR par défaut, qui peut être désactivé au cas par cas.
 
 ## SPA
 
-Une _Single Page Application_ est un genre d'application web popularisée par le <span class="vo">[framework](#framework)</span> [React](https://react.dev/). Le principe est de construire tout le HTML de son application côté client (donc dans le navigateur), et de naviguer dans les différentes sections de l'application sans changer ou recharger la page.
+Une _Single Page Application_ est un genre d'application web popularisée par le <span class="vo">[frameworks](#framework)</span> [React](https://react.dev/) et [AngularJS](https://fr.wikipedia.org/wiki/AngularJS). Le principe est de construire tout le HTML de son application côté client (donc dans le navigateur), et de naviguer dans les différentes sections de l'application sans recharger la page.
 
 Le fait de ne pas avoir besoin de recharger la page permet des fonctionnalités comme ne pas interrompre la lecture d'un flux audio ou vidéo lors de la navigation. Mais ce type d'application a également de gros inconvénients parmi lesquels un temps de chargement potentiellement allongé ainsi qu'une forte dégradation du référencement.
 
