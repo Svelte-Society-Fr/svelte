@@ -146,7 +146,7 @@ _Number_ est le mot anglais pour "nombre". En développement informatique, il s'
 
 ## Parser
 
-_Parser_ est un verbe représentant l'action de transformer une donnée reçue dans un format adapté à son traitement. Un cas classique dans le web est de _parser_ une chaîne de caractères, difficile à traiter mais simple à transporter, en <span class="vo">[JSON](/docs/web#json)</span>, plus simple à manipuler. Il est aussi souvent courant de _parser_ du binaire en chaîne de caractères.
+_Parser_ est un verbe représentant l'action de transformer une donnée reçue dans un format adapté à son traitement. Un cas classique dans une application web est de _parser_ une chaîne de caractères représentant un <span class="vo">[JSON](/docs/web#json)</span>, reçu en réponse d'un appel HTTP, en un objet JavaScript, plus simple à manipuler. Dans d'autres contextes, il est est également possible de _parser_ du binaire en chaîne de caractères.
 
 ## Payload
 
