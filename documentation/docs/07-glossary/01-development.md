@@ -154,7 +154,7 @@ Une _payload_ représente la donnée utile transportée dans une communication.
 
 ## Plugin
 
-Un _plugin_ est une librairie utilitaire que l'on peut ajouter à son propre programme pour l'améliorer.
+Un _plugin_ est une librairie utilitaire que l'on peut ajouter à un programme (navigateur web, <span class="vo">[IDE](/docs/development#ide)</span>, etc.) pour l'améliorer.
 
 ## Pull Request
 
