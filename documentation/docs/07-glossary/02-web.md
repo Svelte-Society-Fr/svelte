@@ -144,7 +144,7 @@ Le <span class="vo">[SSG](#ssg)</span> permet d'avoir une application construite
 
 ## REPL
 
-Un _REPL_ est un outil permettant de modifier et d'exécuter du code sur une page web et dans un environnement restreint, afin de tester certaines fonctionnalités. Svelte propose son propre [_REPL_](/repl).
+Un _REPL_ (de l'anglais "Read-Eval-Print-Loop") est un outil permettant de modifier et d'exécuter du code sur une page web et dans un environnement restreint, afin de tester certaines fonctionnalités. Svelte propose son propre [_REPL_](/repl).
 
 ## Routing
 
