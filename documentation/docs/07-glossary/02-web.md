@@ -42,7 +42,7 @@ Une stratégie CSR nécessite néanmoins d'avoir JavaScript disponible dans son 
 
 ## Desktop
 
-_Desktop_ signifie "bureau" en anglais. Dans le milieu du web, _desktop_ désigne le contexte d'un navigateur ouvert sur un ordinateur de bureau, à la différence d'un navigateur ouvert sur appareil mobile.
+_Desktop_ signifie "bureau" en anglais et désigne un ordinateur dans un contexte de développement. Dans le milieu du web, on distingue parfois une navigation _desktop_ d'une navigation mobile pour des questions de design ou de comportements différents.
 
 ## DOM
 
