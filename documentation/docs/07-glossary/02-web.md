@@ -36,7 +36,7 @@ Une [_checkbox_](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/ch
 
 Le rendu côté client, ou _client-side rendering_ (CSR) est l'action de générer une page web avec tout ou partie des données métier dans le navigateur. Il est à mettre en opposition avec le <span class='vo'>[rendu côté serveur](#server-side-rendering)</span>, ou _server-side rendering_, où les pages viennent charger leurs données métier d'abord sur le serveur.
 
-Le CSR permet notamment de naviguer au sein d'une application sans jamais reconstruire intégralement la page, puisque les différents de la page sont ajoutés au fur et à mesure de la navigation. Le CSR est la stratégie de rendu naturelle des <span class="vo">[SPAs](spa)</span>.
+Le CSR permet notamment de naviguer au sein d'une application sans jamais reconstruire intégralement la page, puisque les différents de la page sont ajoutés au fur et à mesure de la navigation. Le CSR est la stratégie de rendu naturelle des <span class="vo">[SPAs](#spa)</span>.
 
 Une stratégie CSR nécessite néanmoins d'avoir JavaScript disponible dans son navigateur.
 
@@ -126,9 +126,9 @@ Les _metadata_, ou "meta-données", sont des données non essentielles mais perm
 
 Une _Multi Page Application_, ou "Application Multi-Page", est un type d'application web se déployant sur plusieurs pages distinctes que l'on charge au fur et à mesure de la navigation. C'est le type d'application historique du web.
 
-Les _MPAs_ sont à mettre en opposition avec les <span class="vo">[SPAs](spa)</span>, applications sur une seule page, permettant de ne pas recharger intégralement la page à chaque navigation.
+Les _MPAs_ sont à mettre en opposition avec les <span class="vo">[SPAs](#spa)</span>, applications sur une seule page, permettant de ne pas recharger intégralement la page à chaque navigation.
 
-Les _MPAs_ sont souvent utilisées conjointement à une stratégie de [rendu côté serveur](server-side-rendering).
+Les _MPAs_ sont souvent utilisées conjointement à une stratégie de [rendu côté serveur](#server-side-rendering).
 
 ## Preprocessing
 
@@ -136,11 +136,11 @@ Le _preprocessing_ désigne le fait de préparer préalablement du code ou de la
 
 ## Prerendering
 
-Le _prerendering_, ou "rendu préalable", est une stratégie de rendu d'une page web construisant les pages à l'avance. À la différences des stratégies <span class="vo">[CSR](csr)</span> ou <span class="vo">[SSR](ssr)</span>, les pages prérendues sont construites une seule fois, au moment de la compilation (dans le cas où l'application nécessite une étape de compilation).
+Le _prerendering_, ou "rendu préalable", est une stratégie de rendu d'une page web construisant les pages à l'avance. À la différences des stratégies <span class="vo">[CSR](#client-side-rendering)</span> ou <span class="vo">[SSR](#server-side-rendering)</span>, les pages prérendues sont construites une seule fois, au moment de la compilation (dans le cas où l'application nécessite une étape de compilation).
 
 Toutes les pages d'une application ne sont pas compatibles avec cette stratégie, car il est nécessaire que les pages soient statiques, c'est-à-dire que leur contenu soit le même quel que soit la personne visitant la page.
 
-Le <span class="vo">[SSG](ssg)</span> permet d'avoir une application construite entièrement avec des pages prérendues.
+Le <span class="vo">[SSG](#ssg)</span> permet d'avoir une application construite entièrement avec des pages prérendues.
 
 ## REPL
 
@@ -156,7 +156,7 @@ Un _REPL_ est un outil permettant de modifier et d'exécuter du code sur une pag
 
 ## Server-side rendering
 
-Le rendu côté serveur, ou _server-side rendering_ (SSR) est l'action de générer une page web avec tout ou partie des données métier directement sur le serveur. Il est à mettre en opposition avec le <span class='vo'>[rendu côté client](#client-side-rendering)</span>, ou _client-side rendering_, où les pages viennent charger la logique dans un premier temps et les données métiers avec des requêtes supplémentaires, ce qui implique de construire une grande partie de la page dans le navigateur. Le SSR est une stratégie de rendu s'intégrant naturellement dans des [MPAs](mpa).
+Le rendu côté serveur, ou _server-side rendering_ (SSR) est l'action de générer une page web avec tout ou partie des données métier directement sur le serveur. Il est à mettre en opposition avec le <span class='vo'>[rendu côté client](#client-side-rendering)</span>, ou _client-side rendering_, où les pages viennent charger la logique dans un premier temps et les données métiers avec des requêtes supplémentaires, ce qui implique de construire une grande partie de la page dans le navigateur. Le SSR est une stratégie de rendu s'intégrant naturellement dans des [MPAs](#mpa).
 
 Le SSR a pour avantages :
 
@@ -172,9 +172,9 @@ Une _Single Page Application_, ou "Application sur une seule page" est un genre 
 
 Le fait de ne pas avoir besoin de recharger la page permet des fonctionnalités comme ne pas interrompre la lecture d'un flux audio ou vidéo lors de la navigation. Mais ce type d'application a également de gros inconvénients parmi lesquels un temps de chargement potentiellement allongé ainsi qu'une forte dégradation du référencement.
 
-Les _SPAs_ sont à mettre en opposition avec les <span class="vo">[MPAs](mpa)</span>, applications multi-pages, nécessitant un rechargement complet entre chaque page.
+Les _SPAs_ sont à mettre en opposition avec les <span class="vo">[MPAs](#mpa)</span>, applications multi-pages, nécessitant un rechargement complet entre chaque page.
 
-Les _SPAs_ nécessitent une stratégie de [rendu côté client](client-side-rendering), et à ce titre sont plutôt considérées comme des mauvaises pratiques, sauf dans quelques cas très particuliers.
+Les _SPAs_ nécessitent une stratégie de [rendu côté client](#client-side-rendering), et à ce titre sont plutôt considérées comme des mauvaises pratiques, sauf dans quelques cas très particuliers.
 
 On leur préfère des stratégies comme le <span class="vo">[SSR](#server-side-rendering)</span>, le <span class="vo">[SSG](#ssg)</span>, ou encore des stratégies hybrides.
 
