@@ -58,7 +58,7 @@ Dans un contexte web, on parle la plupart du temps d'un _endpoint_ d'API REST, p
 
 ## Framework
 
-Un _framework_ ("cadre de travail") est une libraire complète proposant des outils ainsi qu'une philosophie de travail permettant de réaliser une tâche particulière du début à la fin.
+Un _framework_ est une libraire complète proposant des outils ainsi qu'une philosophie de travail permettant de réaliser une tâche particulière du début à la fin.
 
 Il existe toutes sortes de frameworks, notamment serveur (Express, ...), de composants client (React, Vue, Svelte, ...) ou d'application (SvelteKit, Next, ...).
 
