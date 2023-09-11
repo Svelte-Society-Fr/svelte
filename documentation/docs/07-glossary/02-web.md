@@ -72,7 +72,7 @@ Un _header_ ou "en-tête" est un information que l'on fournit à une requête ou
 
 ## Iframe
 
-Une [_iframe_](https://developer.mozilla.org/fr/docs/Web/HTML/Element/iframe) est un élément HTML (`<iframe>`) permettant d'ouvrir une page web au sein d'une autre page web, affichant ainsi le contenu d'un site dans un autre site.
+Une [_iframe_](https://developer.mozilla.org/fr/docs/Web/HTML/Element/iframe) est un élément HTML (`<iframe>`) permettant d'intégrer une page web au sein d'une autre page web, affichant ainsi le contenu d'un site dans un autre site. Les communications entre l'_iframe_ et la page principale sont volontairement limitées pour des raisons de sécurité.
 
 ## JSON
 
