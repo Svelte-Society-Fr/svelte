@@ -138,7 +138,9 @@ Un _log_ est l'affichage d'une information lors de l'exécution d'un programme. 
 
 ## Namespace
 
-> Bientôt...
+Un `_namespace_` ou "espace de noms" est un espace abstrait dans lequel on peut regrouper des définitions. Cela permet de définir par exemple deux définitions ayant le même nom dans deux espaces différents, sans pour autant les confondre.
+
+Par exemple, on peut définir `sinus` dans un namespace `Math`, ainsi que dans un namespace `Corps`. Ainsi `Math.sinus` renvoie à la fonction mathématique sinus, tandis que `Corps.sinus` renvoie aux cavités nasales du corps humain.
 
 ## Number
 
@@ -164,7 +166,9 @@ Comme <span class="vo">[issue](#issue)</span>, cette terminologie est très util
 
 ## Race condition
 
-> Bientôt...
+Une _race condition_, ou ["situation de compétition"](https://fr.wikipedia.org/wiki/Situation_de_comp%C3%A9tition) décrit une situation où un enchaînement d'opérations effectuées par plusieurs acteurs d'un système donne des résultats différents selon l'ordre dans lequel les acteurs effectuent leurs opérations.
+
+Il est en général préférable d'éviter d'avoir de telles situations.
 
 ## Readonly
 
@@ -174,11 +178,13 @@ Ce terme est à mettre en opposition avec <span class="vo">[writable](#writable)
 
 ## Runtime
 
-> Bientôt...
+Un _runtime_ est un environnement d'exécution permettant d'effectuer les opérations d'un programme informatique dans un langage donné.
+
+Dans le contexte du langage JavaScript, on désigne par _runtime_ les programmes permettant l'exécution de programmes écrits en JavaScript sur un serveur. Les trois _runtime_ JavaScript les plus connus sont [NodeJS](https://nodejs.org/en), [Deno](https://deno.com), et [Bun](https://bun.sh).
 
 ## Scope
 
-> Bientôt...
+Un _scope_ définit la [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) ou les limites dans lesquelles une certaine variable est définie.
 
 ## Slash
 
@@ -194,11 +200,13 @@ _String_ est le mot anglais pour "chaîne de caractères". En développement inf
 
 ## Thread
 
-> Bientôt...
+Un _thread_, ou ["fil d'exécution"](https://fr.wikipedia.org/wiki/Thread_(informatique)) est similaire dans une certaine mesure à un processus permettant l'exécution de tâches sur un microprocesseur.
+
+JavaScript est un langage ne pouvant historiquement s'exécuter que sur un seul _thread_, mais l'arrivée récente des [Web Workers](https://developer.mozilla.org/fr/docs/Web/API/Web_Workers_API/Using_web_workers) permet d'exécuter JavaScript sur plusieurs _threads_.
 
 ## Template
 
-> Bientôt...
+Un _template_ est un modèle de base permettant d'avoir une structure pour créer par exemple des sites web. Le terme _template_ s'utilise à la fois dans un contexte de design — le _template_ est alors le design de base —, et de programmation — le _template_ est alors le code de base.
 
 ## Tooltip
 
