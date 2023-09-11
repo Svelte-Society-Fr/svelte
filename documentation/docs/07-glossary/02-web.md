@@ -10,7 +10,7 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 
 ## ARIA
 
-[_ARIA_](https://developer.mozilla.org/fr/docs/Web/Accessibility/ARIA) est l'acronyme de "Accessible Rich Internet Applications", et pour objectif la popularisation d'applications internet riches d'un point de vue Accessibilité. Il s'agit plus concrètement d'un ensemble d'attributs et de rôles HTML permettant de rendre le contenu des balises plus accessible.
+[_ARIA_](https://developer.mozilla.org/fr/docs/Web/Accessibility/ARIA) est l'acronyme de "Accessible Rich Internet Applications", et a pour objectif la popularisation d'applications internet riches d'un point de vue de l'accessibilité. Il s'agit plus concrètement d'un ensemble d'attributs et de rôles HTML permettant de rendre le contenu d'une page web plus accessible.
 
 ## Bundler / Packager
 
