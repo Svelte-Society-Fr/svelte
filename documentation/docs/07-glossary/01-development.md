@@ -142,6 +142,7 @@ Un `_namespace_` ou "espace de noms" est un espace abstrait dans lequel on peut 
 
 Par exemple, on peut définir `sinus` dans un namespace `Math`, ainsi que dans un namespace `Corps`. Ainsi `Math.sinus` renvoie à la fonction mathématique sinus, tandis que `Corps.sinus` renvoie aux cavités nasales du corps humain.
 
+Dans le développement web, les `_namespaces_` sont souvent utilisés en TypeScript pour organiser les types.
 ## Number
 
 _Number_ est le mot anglais pour "nombre". En développement informatique, il s'agit la plupart du temps d'un type de variable représentant des nombres.
