@@ -36,7 +36,7 @@ Une [_checkbox_](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/ch
 
 Le rendu côté client, ou _client-side rendering_ (CSR) est l'action de générer une page web avec tout ou partie des données métier dans le navigateur. Il est à mettre en opposition avec le <span class='vo'>[rendu côté serveur](#server-side-rendering)</span>, ou _server-side rendering_, où les pages viennent charger leurs données métier d'abord sur le serveur.
 
-Le CSR permet notamment de naviguer au sein d'une application sans jamais reconstruire intégralement la page, puisque les différents de la page sont ajoutés au fur et à mesure de la navigation. Le CSR est la stratégie de rendu naturelle des <span class="vo">[SPAs](#spa)</span>.
+Le CSR permet notamment de naviguer au sein d'une application sans jamais reconstruire intégralement la page, puisque les différents éléments de la page sont ajoutés au fur et à mesure de la navigation. Le CSR est la stratégie de rendu naturelle des <span class="vo">[SPAs](#spa)</span>.
 
 Une stratégie CSR nécessite néanmoins d'avoir JavaScript disponible dans son navigateur.
 
