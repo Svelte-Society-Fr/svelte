@@ -10,17 +10,19 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 
 ## Bubble / Capture
 
-Lorsqu'un événement JavaScript est déclenché, celui-ci parcours le DOM en 3 phases distinctes, dans cet ordre :
+Lorsqu'un événement JavaScript est déclenché, celui-ci parcours le <span class="vo">[DOM](/docs/web#dom)</span> en 3 phases distinctes, dans cet ordre :
 
 - la phase _capture_ : de l'élément window jusqu'à l'élément qui a déclenché l'événement
 - la phase _target_ : lorsque l'événement atteint l'élément qui a déclenché l'événement
-- la phase _bubble_ de l'élément qui a déclenché l'événement jusqu'à l'élément window
+- la phase _bubble_ de l'élément qui a déclenché l'événement jusqu'à l'élément `window`
 
-Un [_event listener_](#event-listener) écoutera par défaut les événements dans leurs phases de _bubbling_. Il est néanmoins possible d'initialiser un _listner_ pour qu'il écoute dans la phase _capture_ avec l'option `{capture: true}` (en svelte, avec le [modificateur de diréctive](/docs/element-directives) `|capture`).
+Un _event listener_ écoutera par défaut les événements dans leurs phases de _bubbling_. Il est néanmoins possible d'initialiser un _listener_ pour qu'il écoute dans la phase _capture_ avec l'option `{capture: true}` (en svelte, avec le [modificateur de directive](/docs/element-directives) `|capture`).
 
-Un événement déclenché par une interaction utilisateur sur un élément du DOM sera propagé dans les phases _target_ et _bubble_, à partir de l'élément qui a déclenché l'événement jusqu'à l'élément window. C'est le comportement auquel nous sommes habitué : 2 _listeners_ sur 2 éléments parents seront déclenchés du plus proche au plus lointain parent.
+## Event dispatcher
 
-Lorsque l'on initialise un événement programmatiquement (`new Event()`), l'événement sera propagé dans les phases _capture_ et _target_ _, à partir de l'élément window jusqu'à l'élément qui a déclenché l'événement. il est possible d'autoriser l'écoute de ces événements dans la phase _bubble_ en initialisant l'événement avec l'option `{bubbles: true}`
+Un _event dispatcher_ (ou générateur d'évènements) est une fonction qui peut être utilisée pour distribuer des évènements au sein d'une application, notamment pour communiquer entre composants. 
+
+Plus d'infos sur [les event dispatchers dans la documentation](/docs/svelte#createeventdispatcher).
 
 ## Event listener
 

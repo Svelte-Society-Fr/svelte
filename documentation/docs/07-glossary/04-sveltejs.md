@@ -39,12 +39,6 @@ De la même manière, il est possible de _binder_ des propriétés d'un composan
 
 Il est également possible de _binder_ des propriétés de certains éléments du <span class='vo'>[DOM](/docs/web#dom)</span> (les éléments de type bloc, les images, les vidéo, window via `svelte:window` et document via `svelte:document`).
 
-## Event dispatcher
-
-Un _event dispatcher_ (ou générateur d'évènements) est une fonction qui peut être utilisée pour distribuer des événements entre composants. 
-
-Plus d'infos sur [les event dispatchers dans la documentation](/docs/svelte#createeventdispatcher).
-
 ## Props
 
 Les _props_ ou propriétés sont les valeurs passées aux composants. Les props sont définies avec le mot clé `export` au sein du `script` des composants :
