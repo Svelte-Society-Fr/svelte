@@ -180,7 +180,7 @@ Récupère l'ensemble des contextes appartenant au composant parent le plus proc
 
 Crée un générateur d'événements qui peut être utilisé pour distribuer les [événements de composants] (/docs#template-syntaxe-component-directives-on-eventname). Les générateurs d'événements sont des fonctions qui peuvent prendre deux arguments : `name` et `detail`.
 
-Les événements de composants créés avec `createEventDispatcher` créent un [CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent) (en anglais). Ces événements ne suivent pas la chaîne de <span class="vo">[bubbling](/docs/javascript#bubble-capture-bubble)</span>. L'argument `detail` correspond à la propriété [CustomEvent.detail](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/detail) (en anglais) et peut contenir tout type de données.
+Les événements de composants créés avec `createEventDispatcher` créent un [CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent) (en anglais). Ces événements ne suivent pas la chaîne de <span class="vo">[bubbling](/docs/javascript#bubble-capture)</span>. L'argument `detail` correspond à la propriété [CustomEvent.detail](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/detail) (en anglais) et peut contenir tout type de données.
 
 ```svelte
 <script>

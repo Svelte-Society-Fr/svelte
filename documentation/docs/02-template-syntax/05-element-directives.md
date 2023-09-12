@@ -53,7 +53,7 @@ Les modificateurs suivants sont disponibles:
 * `stopImmediatePropagation` - appelle `event.stopImmediatePropagation()`, empêchant d'autres gestionnaires du même évènement d'être exécutés
 * `passive` — améliore la performance du défilement pour les évènements `touch`/`wheel` (Svelte l'ajoutera automatiquement lorsque qu'il détecte que ce n'est pas problématique)
 * `nonpassive` — déclare explicitement l'évènement avec `passive: false`
-* `capture` — déclenche le gestionnaire d'évènement pendant la phase de _capture_ plutôt que pendant la phase de _bubbling_
+* `capture` — déclenche le gestionnaire d'évènement pendant la phase de <span class='vo'>[capture](/docs/javascript#bubble-capture)</span> plutôt que pendant la phase de <span class='vo'>[bubbling](/docs/javascript#bubble-capture)</span>
 * `once` — supprime le gestionnaire d'évènement après sa première exécution
 * `self` — ne déclenche le gestionnaire d'évènement que si `event.target` est l'élément lui-même
 * `trusted` — ne déclenche le gestionnaire d'évènement que si `event.isTrusted` est `true`. C'est-à-dire si l'évènement est déclenché par une action utilisateur.

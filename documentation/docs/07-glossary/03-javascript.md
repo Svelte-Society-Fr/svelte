@@ -10,13 +10,19 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 
 ## Bubble / Capture
 
-### Bubble
+Lorsqu'un événement JavaScript est déclenché, celui-ci parcours le <span class="vo">[DOM](/docs/web#dom)</span> en 3 phases distinctes, dans cet ordre :
 
-> Bientôt...
+- la phase _capture_ : de l'élément window jusqu'à l'élément qui a déclenché l'événement
+- la phase _target_ : lorsque l'événement atteint l'élément qui a déclenché l'événement
+- la phase _bubble_ de l'élément qui a déclenché l'événement jusqu'à l'élément `window`
 
-### Capture
+Un _event listener_ écoutera par défaut les événements dans leurs phases de _bubbling_. Il est néanmoins possible d'initialiser un _listener_ pour qu'il écoute dans la phase _capture_ avec l'option `{capture: true}` (en svelte, avec le [modificateur de directive](/docs/element-directives) `|capture`).
 
-> Bientôt...
+## Event dispatcher
+
+Un _event dispatcher_ (ou générateur d'évènements) est une fonction qui peut être utilisée pour distribuer des évènements au sein d'une application, notamment pour communiquer entre composants. 
+
+Plus d'infos sur [les _event dispatchers_ dans la documentation](/docs/svelte#createeventdispatcher).
 
 ## Event listener
 
@@ -48,10 +54,6 @@ element.addEventListener('click', () => console.log('Click !'))
 ```
 
 Plus d'infos sur les _event listeners_ sur [le site de MDN](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener).
-
-## Event dispatcher
-
-> Bientôt...
 
 ## Falsy / Truthy
 
