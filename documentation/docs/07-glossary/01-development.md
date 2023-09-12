@@ -185,7 +185,9 @@ Dans le contexte du langage JavaScript, on désigne par _runtime_ les programmes
 
 ## Scope
 
-Un _scope_ définit la [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) ou les limites dans lesquelles une certaine variable est définie.
+Un _scope_ définit la [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) ou les limites dans lesquelles une certaine chose est définie ou a de l'influence.
+
+On parle de la portée d'une variable en JavaScript pour désigner les limites dans lesquelles celle-ci est définie. De même, on parle de la portée d'une règle CSS pour désigner les limites dans lesquelles cette règle s'applique.
 
 ## Slash
 
