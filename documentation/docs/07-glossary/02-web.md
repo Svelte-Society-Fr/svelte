@@ -110,7 +110,7 @@ Le _layout_ d'une page est sa mise en page.
 
 ## Lazy loading
 
-Le _lazy loading_ (ou "chargement fainéant") est l'action de charger de l'information uniquement lorsqu'elle nécessaire. Par exemple, il est courant d'utiliser cette technique pour charger les images d'une page de site web uniquement lorsqu'elles sont censées être visibles, mais pas avant. Cela permet de rendre le chargement initial de la page plus léger, car la plupart des images ne seront alors pas chargées.
+Le _lazy loading_ (ou "chargement différé" ou "chargement paresseux") est l'action de charger de l'information au moment où elle nécessaire. Par exemple, il est courant d'utiliser cette technique pour charger les images d'une page de site web uniquement lorsqu'elles sont censées être visibles, mais pas avant. Cela permet de rendre le chargement initial de la page plus léger, car la plupart des images ne seront alors pas chargées.
 
 ## Markup
 
