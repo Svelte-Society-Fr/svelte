@@ -22,7 +22,7 @@ Un _event listener_ écoutera par défaut les événements dans leurs phases de 
 
 Un _event dispatcher_ (ou générateur d'évènements) est une fonction qui peut être utilisée pour distribuer des évènements au sein d'une application, notamment pour communiquer entre composants. 
 
-Plus d'infos sur [les event dispatchers dans la documentation](/docs/svelte#createeventdispatcher).
+Plus d'infos sur [les _event dispatchers_ dans la documentation](/docs/svelte#createeventdispatcher).
 
 ## Event listener
 
