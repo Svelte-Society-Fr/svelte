@@ -54,7 +54,7 @@ Le DOM relie les pages web aux scripts, fichiers de styles, ressources externes 
 
 Un _endpoint_ (ou "point de terminaison") est un point d'accès d'une <span class="vo">[API](/docs/development#api)</span> permettant d'interagir avec cette API.
 
-Dans un contexte web, on parle la plupart du temps d'un _endpoint_ d'API REST, permettant de requêter les données d'un serveur.
+Dans un contexte web, on parle souvent d'un _endpoint_ d'API REST, permettant de requêter les données d'un serveur.
 
 ## Framework
 
