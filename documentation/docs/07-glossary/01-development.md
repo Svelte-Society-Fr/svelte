@@ -195,7 +195,7 @@ Un _slash_ est simplement le caractère `/`, à ne pas confondre avec son frère
 
 ## Stack trace
 
-> Bientôt...
+Une _stack trace_, ou "trace de pile", est une liste détaillant dans l'ordre chronologique les appels de fonctions utilisés lorsqu'un programme informatique produit une erreur. Cela permet de suivre le chemin d'exécution du programme, et facilite ainsi la résolution de <span class="vo">[bugs](#bug)</span>.
 
 ## String
 

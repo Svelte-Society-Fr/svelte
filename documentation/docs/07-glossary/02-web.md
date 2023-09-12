@@ -68,7 +68,7 @@ Un _header_ ou "en-tête" est un information que l'on fournit à une requête ou
 
 ## Hot Module Reloading
 
-> Bientôt...
+Le _Hot Module Reloading_ (ou HMR) est un outil de développement permettant de rafraîchir instantanément l'état d'une page web lorsque le code source est modifié, afin de fluidifier le travail de développement. Cet outil est aujourd'hui proposé par la plupart des <span class="vo">[bundlers](#bundler--packager)</span> modernes.
 
 ## Iframe
 
@@ -96,7 +96,7 @@ Le [_JSON_](https://fr.wikipedia.org/wiki/JavaScript_Object_Notation) ("JavaScri
 
 ## Keyframe
 
-> Bientôt...
+Une _keyframe_ représente une étape lors d'une animation CSS. L'usage de _keyframes_ permet de contrôler précisément le déroulé d'une animation CSS.
 
 ## Language Server
 
@@ -141,6 +141,7 @@ Le développement JavaScript moderne implique souvent plusieurs étapes de _prep
 - minifier le code JavaScript pour le rendre plus léger à transporter
 
 Svelte utilise également des préprocesseurs pour convertir les composants Svelte en code JavaScript natif, compréhensible par le navigateur.
+
 ## Prerendering
 
 Le _prerendering_, ou "rendu préalable", est une stratégie de rendu d'une page web construisant les pages à l'avance. À la différences des stratégies <span class="vo">[CSR](#client-side-rendering)</span> ou <span class="vo">[SSR](#server-side-rendering)</span>, les pages prérendues sont construites une seule fois, au moment de la compilation (dans le cas où l'application nécessite une étape de compilation).
@@ -155,11 +156,15 @@ Un _REPL_ (de l'anglais "Read-Eval-Print-Loop") est un outil permettant de modif
 
 ## Routing
 
-> Bientôt...
+Le _routing_, ou "routage", est le fait d'aiguiller un utilisateur ou une utilisatrice sur les différentes pages d'un site web, éventuellement via des redirections. Normalement géré par le serveur recevant les requêtes — on parlera alors de _routing_ serveur —, il est également possible de gérer cet aiguillage directement sur le client dans une stratégie <span class="vo">[CSR](#client-side-rendering)</span> — on parlera alors de _routing_ client.
 
 ## Sourcemap
 
-> Bientôt...
+Une _sourcemap_ est un fichier ou une structure de données associée à un code source, généralement utilisée dans le développement web et la programmation front-end. Elle sert à établir une correspondance entre le code source original, tel qu'il est écrit dans un langage de programmation comme JavaScript, et le code résultant après compilation, minification ou transpilation, qui lui sera réellement exécuté par le navigateur. Cela permet de facilement retrouver dans le code source l'origine d'un <span class="vo">[bug](/docs/development#bug)</span> qui aura été généré par le code compilé.
+
+## SEO
+
+Le _SEO_ ("Search Engine Optimization") désigne l'ensemble des stratégies appliquées à un site web pour optimiser le référencement de ses pages au sein des moteurs de recherche, permettant une meilleure visibilité du site sur internet.
 
 ## Server-side rendering
 
@@ -187,20 +192,24 @@ On leur préfère des stratégies comme le <span class="vo">[SSR](#server-side-r
 
 ## SSG
 
-> Bientôt...
+_SSG_ est l'acronyme de "Static Site Generation", ou "Génération de Site Statique". Il s'agit d'une stratégie de rendu d'une application web où l'intégralité des pages est généré automatiquement au moment de la compilation, utilisant des méthodes de <span class="vo">[prerendering](#prerendering)</span>.
+
+Cette stratégie requiert que toutes les pages de l'application soient statiques, c'est-à-dire que leur contenu soit le même quel que soit la personne visitant la page ou quel que soit le moment de la visite.
 
 ## Trailing slash
 
-> Bientôt...
+Un _trailing slash_ est le <span class="vo">[slash](/docs/development#slash)</span> que l'on retrouve parfois à la fin d'une url, par exemple `https://www.mon-super-site.com/bonjour/`.
+
+La présence ou l'absence de ce _trailing slash_ peut avoir des répercussions sur le référencement des pages concernées.
 
 ## Viewport
 
-> Bientôt...
+Le _viewport_ désigne la surface visible d'une page web au sein d'un navigateur.
 
 ## Web component
 
-> Bientôt...
+Les [_web components_](https://developer.mozilla.org/fr/docs/Web/API/Web_components) sont des éléments HTML personnalisés réutilisables, créés via une <span class="vo">[API](/docs/development#api)</span> standardisée.
 
 ## XSS
 
-> Bientôt...
+_XSS_ est l'acronyme de ["Cross-Site-Scripting"](https://fr.wikipedia.org/wiki/Cross-site_scripting). Il s'agit d'un type d'attaque informatique ciblant les pages d'un site web dans l'objectif de subtiliser les informations de connexion d'un utilisateur ou d'une utilisatrice via l'exécution d'un script malveillant au sein même de la page.

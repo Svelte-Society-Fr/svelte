@@ -39,6 +39,12 @@ De la même manière, il est possible de _binder_ des propriétés d'un composan
 
 Il est également possible de _binder_ des propriétés de certains éléments du <span class='vo'>[DOM](/docs/web#dom)</span> (les éléments de type bloc, les images, les vidéo, window via `svelte:window` et document via `svelte:document`).
 
+## Hook
+
+Un _hook_ est un type de méthode proposé par SvelteKit pour traiter toutes les requêtes arrivant sur le serveur. Vous trouverez [plus de détails sur le site de référence de SvelteKit](SITE_KIT/docs/hooks).
+
+> Ne pas confondre avec les [hooks de React](https://react.dev/reference/react) (en anglais), qui sont un concept totalement différent.
+
 ## Props
 
 Les _props_ ou propriétés sont les valeurs passées aux composants. Les props sont définies avec le mot clé `export` au sein du `script` des composants :
@@ -61,7 +67,7 @@ Plus d'infos sur les [props dans la documentation](/docs/basic-markup#attributs-
 
 ## Slot
 
-Un _slot_ correspond au contenu enfant d'un composant. Il est possible d'y accéder dans le markup via `<slot>` ou dans le bloc `script` via la variable globale `$$slots`. 
+Un _slot_ correspond au contenu enfant d'un composant. Il est possible d'y accéder dans le markup via `<slot>` ou dans le bloc `script` via la variable globale `$$slots`.
 
 Plus d'infos sur [les slots dans la documentation](/docs/special-elements#slot).
 
@@ -73,7 +79,7 @@ Plus d'infos sur [les stores Svelte dans la documentation](/docs/svelte-store).
 
 ## Tick
 
-De manière générale, un _tick_ peut faire référence à une période de temps unitaire. 
+De manière générale, un _tick_ peut faire référence à une période de temps unitaire.
 
 Dans le cadre de Svelte, la méthode _tick_ définit est une promesse qui se résout une fois que tous les changements d'état en attente ont été appliqués, ou dans la micro-tâche suivante s'il n'y en a pas.
 
