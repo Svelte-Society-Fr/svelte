@@ -134,6 +134,13 @@ Les _MPAs_ sont souvent utilisées conjointement à une stratégie de [rendu cô
 
 Le _preprocessing_ désigne le fait de préparer préalablement du code ou de la donnée afin de l'optimiser ou l'adapter à son futur traitement.
 
+Le développement JavaScript moderne implique souvent plusieurs étapes de _preprocessing_, comme par exemple :
+- transformer du code JavaScript moderne en code JavaScript plus ancien, mais compatible avec plus de navigateurs
+- transformer du code TypeScript en code JavaScript
+- transformer du code SASS en code CSS
+- minifier le code JavaScript pour le rendre plus léger à transporter
+
+Svelte utilise également des préprocesseurs pour convertir les composants Svelte en code JavaScript natif, compréhensible par le navigateur.
 ## Prerendering
 
 Le _prerendering_, ou "rendu préalable", est une stratégie de rendu d'une page web construisant les pages à l'avance. À la différences des stratégies <span class="vo">[CSR](#client-side-rendering)</span> ou <span class="vo">[SSR](#server-side-rendering)</span>, les pages prérendues sont construites une seule fois, au moment de la compilation (dans le cas où l'application nécessite une étape de compilation).
