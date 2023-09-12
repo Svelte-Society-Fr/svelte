@@ -120,7 +120,7 @@ Lorsqu'on parle de _markup_, on désigne l'ensemble des balises présentes dans 
 
 ## Metadata
 
-Les _metadata_, ou "meta-données", sont des données non essentielles mais permettant d'enrichir le contexte des données auxquelles elles se réfèrent. Par exemple, la langue d'une page n'est pas la donnée principale de la page — le texte de la page est la donnée principale —, mais est une meta-donnnées permettant de mieux interpréter le contenu de la page.
+Les _metadata_, ou "meta-données", sont des données non essentielles mais permettant d'enrichir le contexte des données auxquelles elles se réfèrent. Par exemple, la langue d'une page n'est pas la donnée principale de la page — le texte de la page est la donnée principale —, mais est une meta-donnée permettant de mieux interpréter le contenu de la page.
 
 ## MPA
 
