@@ -207,7 +207,7 @@ JavaScript est un langage ne pouvant historiquement s'exécuter que sur un seul 
 
 ## Template
 
-Un _template_ est un modèle de base permettant d'avoir une structure pour créer par exemple des sites web. Le terme _template_ s'utilise à la fois dans un contexte de design — le _template_ est alors le design de base —, et de programmation — le _template_ est alors le code de base.
+Un _template_ désigne un modèle qui simplifie la création d'un site web, d'un logiciel, d'une application ou d'un design. Il intègre des éléments déjà préconçus et faciles à modifier pour rendre la création web plus facile et rapide.
 
 ## Tooltip
 
