@@ -106,7 +106,7 @@ Plus d'infos sur le [site de la documentation du LSP](https://microsoft.github.i
 
 ## Layout
 
-Le _layout_ d'une page est sa mise en page.
+Dans le web, un _layout_ désigne un composant particulier qui a pour but de formaliser une mise en page donnée. Elle peut alors être utilisée pour tout ou partie de l'application voire être composée avec d'autres _layouts_.
 
 ## Lazy loading
 
