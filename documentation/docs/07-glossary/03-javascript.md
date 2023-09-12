@@ -10,13 +10,17 @@ Ces mots n'ont pas de réelle traduction en français, ou alors celle-ci n'est q
 
 ## Bubble / Capture
 
-### Bubble
+Lorsqu'un événement JavaScript est déclenché, celui-ci parcours le DOM en 3 phases distinctes, dans cet ordre :
 
-> Bientôt...
+- la phase _capture_ : de l'élément window jusqu'à l'élément qui a déclenché l'événement
+- la phase _target_ : lorsque l'événement atteint l'élément qui a déclenché l'événement
+- la phase _bubble_ de l'élément qui a déclenché l'événement jusqu'à l'élément window
 
-### Capture
+Un [_event listener_](#event-listener) écoutera par défaut les événements dans leurs phases de _bubbling_. Il est néanmoins possible d'initialiser un _listner_ pour qu'il écoute dans la phase _capture_ avec l'option `{capture: true}` (en svelte, avec le [modificateur de diréctive](/docs/element-directives) `|capture`).
 
-> Bientôt...
+Un événement déclenché par une interaction utilisateur sur un élément du DOM sera propagé dans les phases _target_ et _bubble_, à partir de l'élément qui a déclenché l'événement jusqu'à l'élément window. C'est le comportement auquel nous sommes habitué : 2 _listeners_ sur 2 éléments parents seront déclenchés du plus proche au plus lointain parent.
+
+Lorsque l'on initialise un événement programmatiquement (`new Event()`), l'événement sera propagé dans les phases _capture_ et _target_ _, à partir de l'élément window jusqu'à l'élément qui a déclenché l'événement. il est possible d'autoriser l'écoute de ces événements dans la phase _bubble_ en initialisant l'événement avec l'option `{bubbles: true}`
 
 ## Event listener
 
@@ -48,10 +52,6 @@ element.addEventListener('click', () => console.log('Click !'))
 ```
 
 Plus d'infos sur les _event listeners_ sur [le site de MDN](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener).
-
-## Event dispatcher
-
-> Bientôt...
 
 ## Falsy / Truthy
 
