@@ -138,7 +138,7 @@ Le _preprocessing_ désigne le fait de préparer préalablement du code ou de la
 
 Le _prerendering_, ou "rendu préalable", est une stratégie de rendu d'une page web construisant les pages à l'avance. À la différences des stratégies <span class="vo">[CSR](#client-side-rendering)</span> ou <span class="vo">[SSR](#server-side-rendering)</span>, les pages prérendues sont construites une seule fois, au moment de la compilation (dans le cas où l'application nécessite une étape de compilation).
 
-Toutes les pages d'une application ne sont pas compatibles avec cette stratégie, car il est nécessaire que les pages soient statiques, c'est-à-dire que leur contenu soit le même quel que soit la personne visitant la page.
+Toutes les pages d'une application ne sont pas compatibles avec cette stratégie, car il est nécessaire que les pages soient statiques, c'est-à-dire que leur contenu soit le même quel que soit la personne visitant la page ou quel que soit le moment de la visite.
 
 Le <span class="vo">[SSG](#ssg)</span> permet d'avoir une application construite entièrement avec des pages prérendues.
 
