@@ -200,7 +200,7 @@ Cette stratégie requiert que toutes les pages de l'application soient statiques
 
 Un _trailing slash_ est le <span class="vo">[slash](/docs/development#slash)</span> que l'on retrouve parfois à la fin d'une url, par exemple `https://www.mon-super-site.com/bonjour/`.
 
-La présence ou l'absence de ce _trailing slash_ peut avoir des répercussions sur le référencement des pages concernées.
+La présence ou l'absence de ce _trailing slash_ a des répercussions sur les navigations relatives au sein du site ainsi que sur le référencement des pages concernées
 
 ## Viewport
 
