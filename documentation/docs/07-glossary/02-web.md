@@ -68,7 +68,7 @@ Un _header_ ou "en-tête" est un information que l'on fournit à une requête ou
 
 ## Hot Module Reloading
 
-Le _Hot Module Reloading_ (ou HMR) est un outil de développement permettant de rafraîchir instantanément l'état d'une page web lorsque le code source est modifié, afin de fluidifier le travail de développement. Cet outil est aujourd'hui proposé par la plupart des <span class="vo">[bundlers](#bundler--packager)</span> modernes.
+Le _Hot Module Reloading_ (ou HMR) est un outil de développement permettant de rafraîchir instantanément l'état d'une page web lorsque le code source est modifié, afin de fluidifier le travail de développement. Cet outil est aujourd'hui proposé par la plupart des <span class="vo">[bundlers](#bundler-packager)</span> modernes.
 
 ## Iframe
 
