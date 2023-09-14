@@ -41,7 +41,7 @@ Il est également possible de _binder_ des propriétés de certains éléments d
 
 ## Hook
 
-Un _hook_ est un type de méthode proposé par SvelteKit pour traiter toutes les requêtes arrivant sur le serveur. Vous trouverez [plus de détails sur le site de référence de SvelteKit](SITE_KIT/docs/hooks).
+Un _hook_ est un type de méthode proposé par SvelteKit pour traiter toutes les requêtes arrivant sur le serveur. Vous trouverez [plus de détails sur le site de référence de SvelteKit](KIT_SITE_URL/docs/hooks).
 
 > Ne pas confondre avec les [hooks de React](https://react.dev/reference/react) (en anglais), qui sont un concept totalement différent.
 

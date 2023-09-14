@@ -9,6 +9,8 @@ import {
 import { CONTENT_BASE_PATHS } from '../../../constants.js';
 import { render_content } from '../renderer';
 
+import { KIT_SITE_URL } from '$env/static/private';
+
 /**
  * @param {import('./types').DocsData} docs_data
  * @param {string} slug
@@ -74,7 +76,7 @@ export async function get_docs_data(base = CONTENT_BASE_PATHS.DOCS) {
 			category.pages.push({
 				title: page_title,
 				slug: page_slug,
-				content: page_content,
+				content: page_content.replace(/KIT_SITE_URL/g, KIT_SITE_URL),
 				category: category_title,
 				sections: await get_sections(page_content),
 				path: `${app_base}/docs/${page_slug}`,
@@ -101,7 +103,11 @@ export function get_docs_list(docs_data) {
 
 const titled = async (str) =>
 	removeMarkdown(
-		escape(await markedTransform(str, { paragraph: (txt) => txt }))
+		escape(
+			await markedTransform(str, {
+				paragraph: (txt) => txt
+			})
+		)
 			.replace(/<\/?code>/g, '')
 			.replace(/&#39;/g, "'")
 			.replace(/&quot;/g, '"')
